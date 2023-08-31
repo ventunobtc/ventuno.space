@@ -1,0 +1,16 @@
+extends /template.pug
+
+block vars
+  - const title = 'Guide'
+  - const description = 'Elenco delle guide della community Ventuno.'
+
+block main
+  #guide.wrap
+    section
+      h1= title
+      p= description
+
+      :markdown-it(html linkify typographer)
+        È possibile contribuire alla realizzazione di nuove guide e materiale di supporto tramite [Pull Request]().
+        Ecco un [video tutorial]() su come creare una nuova richiesta di pull.
+
