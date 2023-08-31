@@ -32,23 +32,33 @@ const meetupsSorted = site.meetups.sort((a, b) => {
 
 renderPage('index', 'index', { navCurrent: 'index', currentEpisode: episodes[0] })
 renderPage('podcast', 'podcast', { navCurrent: 'podcast', episodes: [...episodes] })
-renderPage('meetups', 'meetups', { navCurrent: 'meetups', meetups: meetupsSorted })
-renderPage('kurse', 'kurse', { navCurrent: 'kurse', kurse })
-renderPage('spenden', 'spenden', { navCurrent: 'spenden', spendenregister, spendenuebersicht })
+
+renderPage('meetups', 'meetup', { navCurrent: 'meetups', meetups: meetupsSorted })
+renderPage('events', 'eventi', { navCurrent: 'events' })
+renderPage('kurse', 'corsi', { navCurrent: 'corsi', kurse })
+renderPage('guides', 'guide', { navCurrent: 'guide' })
+renderPage('books', 'libri', { navCurrent: 'libri' })
+renderPage('spenden', 'donazioni', { navCurrent: 'donazioni', spendenregister, spendenuebersicht })
+renderPage('shops', 'shop', { navCurrent: 'shops', shops })
+
 renderPage('media', 'media', { navCurrent: 'media' })
+renderPage('social', 'social', { navCurrent: 'social' })
+renderPage('team', 'team', { navCurrent: 'team', team })
 renderPage('soundboard', 'soundboard', { navCurrent: 'soundboard', soundboard })
 renderPage('telegram', 'telegram', { navCurrent: 'telegram', telegram: site.telegram })
-renderPage('events', 'events', { navCurrent: 'events' })
+
 renderPage('events/satoshis-bleibe-2022', 'events/satoshis-bleibe-2022', { navCurrent: 'events'})
 renderPage('events/bitcoin-im-laendle-2022', 'events/bitcoin-im-laendle-2022', { navCurrent: 'events' })
 renderPage('events/sommerfest-hodler-heide-2022', 'events/sommerfest-hodler-heide-2022', { navCurrent: 'events'})
 renderPage('events/satoshis-beach-2022', 'events/satoshis-beach-2022', { navCurrent: 'events'})
-renderPage('shops', 'shops', { navCurrent: 'shops', shops })
+
 renderPage('verein', 'verein', { navCurrent: 'verein' })
 renderPage('kontakt', 'kontakt', { navCurrent: 'kontakt' })
 renderPage('datenschutz', 'datenschutz', { navCurrent: 'datenschutz' })
-renderPage('adventskalender', 'adventskalender', { adventskalender })
+
+renderPage('adventskalender', 'avvento', { adventskalender })
 renderPage('gesundes-geld', 'gesundes-geld', { meetups: meetupsSorted })
+
 renderPage('category', 'podcast/news', { navCurrent: 'podcast', category: 'news', categoryName: 'News', episodes: episodes.filter(e => e.category === 'news') })
 renderPage('category', 'podcast/interviews', { navCurrent: 'podcast', category: 'interview', categoryName: 'Interviews', episodes: episodes.filter(e => e.category === 'interview') })
 renderPage('category', 'podcast/lesestunde', { navCurrent: 'podcast', category: 'lesestunde', categoryName: 'Lesestunde', episodes: episodes.filter(e => e.category === 'lesestunde') })
