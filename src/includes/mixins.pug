@@ -4,12 +4,12 @@ mixin sprite(id)
 
 mixin categories(current)
   ul.categories
-    li: a(href="/podcast/" class=(!current && 'current')) Alles
+    li: a(href="/podcast/" class=(!current && 'current')) Tutti
     li: a(href="/podcast/news/" class=(current === 'News' && 'current')) News
-    li: a(href="/podcast/interviews/" class=(current === 'Interviews' && 'current')) Interviews
-    li: a(href="/podcast/lesestunde/" class=(current === 'Lesestunde' && 'current')) Lesestunde
-    li: a(href="/podcast/der-weg/" class=(current === 'Der Weg' && 'current')) Der Weg
-    li: a(href="/podcast/verschiedenes/" class=(current === 'Verschiedenes' && 'current')) Verschiedenes
+    li: a(href="/podcast/interviews/" class=(current === 'Interviews' && 'current')) Interviste
+    li: a(href="/podcast/lesestunde/" class=(current === 'Lesestunde' && 'current')) Letteratura
+    li: a(href="/podcast/der-weg/" class=(current === 'Der Weg' && 'current')) Percorso
+    li: a(href="/podcast/verschiedenes/" class=(current === 'Verschiedenes' && 'current')) Varie
 
 mixin member(m)
   li.member(id=m.name)
@@ -174,7 +174,7 @@ mixin subscribe()
   script.
     window.subscribe = {
       title: "Einundzwanzig",
-      subtitle: "Der Bitcoin Podcast",
+      subtitle: "Il nostro Bitcoin Podcast",
       description: "#{site.meta.description}",
       cover: "#{assetUrl(site.meta.cardImage)}",
       feeds: [

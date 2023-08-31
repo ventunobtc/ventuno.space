@@ -3,7 +3,7 @@ extends /template.pug
 block vars
   - const current = episodes.shift()
   - const title = site.meta.title
-  - const description = 'Wir bringen dir die Bitcoin-News der Woche, sowie zusätzlich Interviews und die besten Artikel als Lesestunde. Außerdem erfährst du in "Der Weg" wie andere Leute zu Bitcoin gekommen sind.'
+  - const description = 'Vi riportiamo le notizie su Bitcoin della settimana, oltre a interviste e ai migliori articoli. Potete anche scoprire come altre persone sono entrate in Bitcoin.'
 
 block main
   #podcast.podcast-home.wrap
@@ -13,7 +13,7 @@ block main
       +categories()
 
       p
-        | Du findest uns auf allen gängigen Podcast-Plattformen:
+        | Ci trovate su tutte le piattaforme podcast più diffuse:
         = " "
         a(href=site.meta.spotifyUrl) Spotify
         = ", "
@@ -30,13 +30,13 @@ block main
       +subscribe()
 
     section
-      h2 Aktuelle Episode
+      h2 Ultimo Episodio
       .current
         +episodePlayer(current)
 
     if episodes.length
       section
-        h2 Weitere Episoden
+        h2 Altri Episodi
         .episodes
           each e in episodes
             +episodeItem(e)

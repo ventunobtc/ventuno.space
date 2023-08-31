@@ -1,8 +1,8 @@
 extends /template.pug
 
 block vars
-  - const title = 'Unser Media Kit'
-  - const description = 'Damit wir mal groß und berühmt werden, kannst du dieses Media Kit gerne nutzen, um allen von uns zu erzählen.'
+  - const title = 'Il nostro Media Kit'
+  - const description = 'Per renderci grandi, potete usare questo media kit per parlare di noi a tutti.'
 
 block main
   #media.wrap
@@ -10,27 +10,27 @@ block main
       h1= title
 
       article
-        h2 Logo quadratisch
+        h2 Logo quadrato
         a.logo.logo-square(href=assetPath("/img/media/einundzwanzig-square.svg") target="_blank")
           img(src=assetPath("/img/media/einundzwanzig-square.svg") alt="Logo quadratisch")
 
       article
-        h2 Logo horizontal
+        h2 Logo orizzontale
         a.logo.logo-horizontal(href=assetPath("/img/media/einundzwanzig-horizontal.svg") target="_blank")
           img(src=assetPath("/img/media/einundzwanzig-horizontal.svg") alt="Logo horizontal")
 
       article
-        h2 Logo quadratisch, invertiert
+        h2 Logo quadrato, invertito
         a.logo.logo-square.inverted(href=assetPath("/img/media/einundzwanzig-square-inverted.svg") target="_blank")
           img(src=assetPath("/img/media/einundzwanzig-square-inverted.svg") alt="Logo quadratisch, invertiert")
 
       article
-        h2 Logo horizontal, invertiert
+        h2 Logo orizzontale, invertito
         a.logo.logo-horizontal.inverted(href=assetPath("/img/media/einundzwanzig-horizontal-inverted.svg") target="_blank")
           img(src=assetPath("/img/media/einundzwanzig-horizontal-inverted.svg") alt="Logo horizontal, invertiert")
 
       article
-        h2 Telegram Vorlage Gruppenbild
+        h2 Immagine gruppo Telegram
         a.telegram(href=assetPath("/img/media/einundzwanzig-telegram.png") target="_blank")
           img(src=assetPath("/img/media/einundzwanzig-telegram.png") alt="Telegram")
 
@@ -43,12 +43,12 @@ block main
           img(src=assetPath("/img/media/einundzwanzig-cover-lesestunde.png") alt="Cover Lesestunde")
 
       article
-        h2 Präsentationsvorlage
+        h2 Modello di presentazione
         a(href="https://github.com/Einundzwanzig-Podcast/slides" target="_blank")
           img(src=assetPath("/img/media/einundzwanzig-slides.png") alt="Einundzwanzig Slide-Vorlage")
 
       article
-        h2 Meetup Flyer Vorlage
+        h2 Modello di volantino per incontri
         p
           = "Von "
           a(href="https://twitter.com/Niklvs03/status/1459629529731903495?s=20" target="_blank" rel="noopener noreferrer") SATNIK
@@ -58,7 +58,7 @@ block main
           a(href="https://www.canva.com/design/DAEvn3g1ycs/cJ-4MfDZBvLHZN3SKRu5Cg/view?utm_content=DAEvn3g1ycs&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton&mode=preview" target="_blank" rel="noopener noreferrer") Canva
         img.flyer(src=assetPath("/img/media/einundzwanzig-meetup-flyer-preview.jpg") alt="Einundzwanzig Meetup Flyer Vorlage")
 
-      article
+      //-article
         h2 Wallpaper
         a.wallpaper(href=assetPath("/img/media/einundzwanzig-wallpaper.png") target="_blank")
           img(src=assetPath("/img/media/einundzwanzig-wallpaper-preview.jpg") alt="Wallpaper")
@@ -76,10 +76,10 @@ block main
         p
           a(href="https://drive.google.com/drive/folders/1SWZfGja8DoYuXsV5shCPm67Bthgmgtl2" target="_blank" rel="noopener noreferrer"
 
-          ) Weitere Wallpaper
+          ) Weitere Wallpaper-//
 
       article
-        h2 Schriften
+        h2 Caratteri
         ul.fonts
           li.font-bold
             a(href="https://www.dafont.com/the-bold-font.font" target="_blank" rel="nofollow noopener") Logo: The Bold Font
@@ -87,13 +87,13 @@ block main
             a(href="https://fonts.google.com/specimen/Inconsolata" target="_blank" rel="nofollow noopener") Copy: Inconsolata
 
       article
-        h2 Farben
+        h2 Colori
         ul.colors
           li.orange #F7931A
           li.derweg #00B4CF
           li.interview #151515
 
       article
-        h2 Dokumente
+        h2 Documenti
         ul
-          li: a(href="/files/EINUNDZWANZIG-WhatWorkedForUs.pdf") What Worked For Us
+          li: a(href="/files/EINUNDZWANZIG-WhatWorkedForUs.pdf") Cosa ha funzionato per noi

@@ -17,28 +17,28 @@ block main
       h2= description
 
       :markdown-it(html linkify typographer)
-        [Bitcoin](https://bitcoin.org/bitcoin.pdf), und sonst nichts.
-        Einmal die Woche sitzen die Jungs zusammen und besprechen die aktuellen Geschehnisse in Bitcoin und der Welt.
+        [Bitcoin](https://bitcoin.org/bitcoin.pdf), e nient'altro.
+        Una volta alla settimana, alcuni ragazzi del [team]() si siedono e discutono degli ultimi avvenimenti in Bitcoin e nel mondo.
 
-        Wir bringen dir die [News](/podcast/news/) der Woche, sowie zusätzlich [Interviews](/podcast/interviews/) und
-        die besten Artikel als [Lesestunde](/podcast/lesestunde/).
-        Außerdem erfährst du in [Der Weg](/podcast/der-weg/) wie andere Leute zu Bitcoin gekommen sind.
+        Vi proponiamo le [News]() della settimana, oltre a [Interviste]() e
+        le migliori [Risorse]() da leggere.
+        Potete anche scoprire [come]() altre persone sono entrate in Bitcoin.
       +subscribe()
 
     section
-      h2 Aktuelle Episode
+      h2 Ultimo Episodio
       .current
         +episodePlayer(currentEpisode)
 
     section#telegram
       :markdown-it(html linkify typographer)
-        ## 💬 Komm in die Gruppe!
+        ## 💬 Entra nel Gruppo!
 
-        Mit unserer Telegram-Gruppe bieten wir dir ein Shitcoin-freies Refugium: Mit über 2.000 Gleichgesinnten
-        sprechen wir dort nicht über den Preis, Altcoins oder sonstige unwichtigen Dinge. In unserer Gruppe
-        findest du News, Informationen und bekommst praktische Ratschläge zu technischen Themen.
+        Con il nostro gruppo Telegram, vi offriamo un rifugio privo di shitcoin: con oltre 2.000 persone
+        non parliamo di prezzo, altcoin o altre cose poco importanti. Nel nostro gruppo puoi trovare notizie,
+        informazioni e ricevere consigli pratici su argomenti tecnici
 
-      a.button(href=site.meta.telegramUrl target="_blank" rel="nofollow noopener") Ab in die Gruppe
+      a.button(href=site.meta.telegramUrl target="_blank" rel="nofollow noopener") Entra nel gruppo
 
     //- section#shop
     //-   :markdown-it(html linkify typographer)
@@ -55,54 +55,54 @@ block main
 
     //-   a.button(href=site.meta.shopUrl target="_blank" rel="nofollow noopener") Zum Shop
 
-    section#pocket
-      :markdown-it(html linkify typographer)
-        ## 💰 Sats in der Tasche
+    //-section#pocket
+    //-  :markdown-it(html linkify typographer)
+    //-    ## 💰 Sats in der Tasche
 
-        Mit Pocket Bitcoin kannst du Satoshis stapeln und diese direkt in deiner eigenen Wallet empfangen.
-        Das Einrichten regelmäßiger Käufe ist sehr leicht und schnell gemacht, ideal für deinen Bitcoin-Sparplan.
-        Und wenn du spontan den Dip kaufen möchtest, dann geht natürlich auch das.
+    //-    Mit Pocket Bitcoin kannst du Satoshis stapeln und diese direkt in deiner eigenen Wallet empfangen.
+    //-    Das Einrichten regelmäßiger Käufe ist sehr leicht und schnell gemacht, ideal für deinen Bitcoin-Sparplan.
+    //-    Und wenn du spontan den Dip kaufen möchtest, dann geht natürlich auch das.
 
-      a.button(href="https://pocketbitcoin.com/einundzwanzig/" target="_blank" rel="nofollow noopener") Mehr zu Pocket Bitcoin
+    //-  a.button(href="https://pocketbitcoin.com/einundzwanzig/" target="_blank" rel="nofollow noopener") Mehr zu Pocket Bitcoin
 
-    section#bitbox
-      :markdown-it(html linkify typographer)
-        ## 🔐 Auf der sicheren Seite
+    //-section#bitbox
+    //-  :markdown-it(html linkify typographer)
+    //-    ## 🔐 Auf der sicheren Seite
 
-        Unser Sponsor BitBox hat mit der BitBox02 Bitcoin-only Edition eine Hardware Wallet geschaffen,
-        die Sicherheit gut nutzbar macht: Ob Einsteiger oder fortgeschritten, hier findest du die Features,
-        mit denen du deine Sats sicher verwahren kannst. Unsere Empfehlung, auch schon vor dem Sponsoring.
+    //-    Unser Sponsor BitBox hat mit der BitBox02 Bitcoin-only Edition eine Hardware Wallet geschaffen,
+    //-    die Sicherheit gut nutzbar macht: Ob Einsteiger oder fortgeschritten, hier findest du die Features,
+    //-    mit denen du deine Sats sicher verwahren kannst. Unsere Empfehlung, auch schon vor dem Sponsoring.
 
-      a.button(href="https://bitbox.swiss/einundzwanzig/" target="_blank" rel="nofollow noopener") BitBox02 Bitcoin-only Edition
+    //-  a.button(href="https://bitbox.swiss/einundzwanzig/" target="_blank" rel="nofollow noopener") BitBox02 Bitcoin-only Edition
 
     section#shoutout
       :markdown-it(html linkify typographer)
-        ## 🗣 Sei laut, shout out!
+        ## 🗣 Presenta la tua idea, shout out!
 
-        Wenn du möchtest, dass wir im Podcast deinen "Shout-Out" vorlesen, dann bist du mit 21.000 Sats dabei!
-        Wir sammeln alle Einnahmen bis die 1.000.000 Sats voll sind. Dann lassen wir in unserer Telegram-Gruppe
-        darüber abstimmen welches Bitcoin-Projekt aus Deutschland diese kostbaren Sats bekommen soll.
-        Wenn du also einen Shout-Out in unserem Podcast kaufst, [unterstützt](/spenden/) du damit auch ein Bitcoin Projekt.
+        Se volete che leggiamo il vostro "Shout-Out" nel podcast, vi aspettano 21.000 battute! 
+        Raccogliamo tutti i proventi fino a esaurimento di 1.000.000 di sats. Poi lasciamo che il nostro gruppo Telegram
+        voti su quale progetto Bitcoin dalla Germania debba ricevere questi preziosi sats.
+        Quindi, se acquistate uno Shout-Out nel nostro podcast, [sostenete]() anche un progetto Bitcoin.
 
-      a.button(href=site.meta.shoutoutUrl target="_blank" rel="nofollow noopener") Shout-Out senden
+      a.button(href=site.meta.shoutoutUrl target="_blank" rel="nofollow noopener") Invia uno Shout-Out
 
     section#youtube
       :markdown-it(html linkify typographer)
         ## 📺 Community-Tutorials
 
-        Mit Hilfe der Community veröffentlichen wir praktische Bitcoin-Anleitungen:
-        Den eigenen Node betreiben und Apps aufsetzen, Wallets verbinden und so weiter.
-        Du hast auch eine Idee für ein Tutorial? Immer her damit – wir helfen dir, dass es möglichst viele Leute sehen.
+        Con l\'aiuto della community, pubblichiamo guide pratiche su Bitcoin:
+        esecuzione del proprio nodo e impostazione di applicazioni, connessione di portafogli e così via.
+        Avete un\'idea per un tutorial? Proponetela a noi: vi aiuteremo a fare in modo che il maggior numero possibile di persone la veda.
 
-      a.button(href=site.meta.youtubeUrl target="_blank" rel="nofollow noopener") Unser YouTube-Kanal
+      a.button(href=site.meta.youtubeUrl target="_blank" rel="nofollow noopener") Il nostro canale YouTube
 
     section#lightning
       :markdown-it(html linkify typographer)
-        ## ⚡️ Unser Lightning Node
+        ## ⚡️ Il nostro nodo Lightning
 
-        Du kannst einen Kanal zu unserem Lightning Node aufmachen – entweder um im Shop ohne Routinggebühren zu
-        zahlen oder um dich darüber mit anderen Mitgliedern der Community zu verbinden. Der Node ist bereits gut
-        vernetzt und du erhältst durch einen Kanal gute Verbindungen zu weiteren gut vernetzten Nodes.
+        È possibile aprire un canale \verso il nostro Lightning Node - sia per pagare senza commissioni di routing,
+        sia per connettersi con altri membri della community. Il nodo è già ben connesso 
+        e si ottengono buone connessioni con altri nodi ben connessi attraverso un canale.
 
       .lnNodes
         .lnNode

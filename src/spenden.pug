@@ -1,27 +1,27 @@
 extends /template.pug
 
 block vars
-  - const title = 'Spenden'
-  - const description = 'Die folgenden Projekte, Initiativen und Entwickler haben wir mit den Shout-Out-Beiträgen der Community bereits unterstützt.'
+  - const title = 'Donazioni'
+  - const description = 'Abbiamo già supportato i seguenti progetti, iniziative e sviluppatori con contributi di riconoscimento da parte della comunità.'
 
 block main
   #spenden.wrap
     section
       h1= title
 
-      h2 Spendenübersicht
+      h2 Panoramica
       p= description
 
       ul.spenden
         each s in spendenuebersicht
           +spende(s)
 
-      h2 Spendenregister
-      p Diese spendenfinanzierten Projekte, Initiativen und Entwickler halten wir für unterstützenswert.
+      h2 Registro donazioni
+      p Consideriamo questi progetti, iniziative e sviluppatori degni di essere sostenuti.
 
       :markdown-it(html linkify typographer)
-        Neue Vorschläge können gerne [per Pull Request](https://github.com/Einundzwanzig-Podcast/einundzwanzig.space/edit/master/content/spendenregister/) hinzugefügt werden.
-        Hier gibt es ein [Video-Tutorial](https://www.youtube.com/watch?v=BNJc9LExEzU), wie ein neuer Pull Request erstellt werden kann.
+        È gradita l'aggiunta di nuove proposte tramite [Pull Request](https://github.com/Einundzwanzig-Podcast/einundzwanzig.space/edit/master/content/donationregister.json).
+        Ecco un [video tutorial](https://www.youtube.com/watch?v=BNJc9LExEzU) su come creare una nuova richiesta di pull.
 
       ul.spenden(data-shuffle)
         each s in shuffle(spendenregister)

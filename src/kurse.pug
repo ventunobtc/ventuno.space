@@ -1,8 +1,8 @@
 extends /template.pug
 
 block vars
-  - const title = 'Bitcoin-Kurse'
-  - const description = 'Eine Liste von Bitcoin-Kursen und Lehrveranstaltungen im D/A/CH-Raum.'
+  - const title = 'Corsi Bitcoin'
+  - const description = 'Elenco di corsi Bitcoin e di eventi didattici.'
   - const filterUnmapped = (list) => list.filter(kurs => !kurs.top || !kurs.left)
   - const unmapped = filterUnmapped(kurse)
   - const style = m => m.top && m.left ? `top:${m.top}%;left:${m.left}%;` : null
@@ -16,14 +16,14 @@ block main
       p= description
 
       :markdown-it(html linkify typographer)
-        Neue Kurse können gerne [per Pull Request](https://github.com/Einundzwanzig-Podcast/einundzwanzig.space/edit/master/content/kurse.json) hinzugefügt werden.
-        Hier gibt es ein [Video-Tutorial](https://www.youtube.com/watch?v=BNJc9LExEzU), wie ein neuer Pull Request erstellt werden kann.
-        Die Werte für `top/left` geben prozentual die Position des Ortes auf der Karte an.
+        È possibile aggiungere nuovi corsi tramite [Pull Request](https://github.com/Einundzwanzig-Podcast/einundzwanzig.space/edit/master/content/courses.json).
+        Ecco un [video tutorial](https://www.youtube.com/watch?v=BNJc9LExEzU) su come creare una nuova richiesta di pull.
+        I valori `top/left` indicano la posizione sulla mappa in percentuale.
 
-        Außerdem findest du hier unsere [Präsentationsvorlage](https://github.com/Einundzwanzig-Podcast/slides) mit der du eine Ausgangsbasis für deine Vorträge hast.
+        Qui potete trovare anche il nostro [modello di presentazione](https://github.com/Einundzwanzig-Podcast/slides), che vi offre un punto di partenza per le vostre presentazioni.
 
       #map
-        h2 Lehrveranstaltungen im D/A/CH-Raum
+        h2 Corsi
         ul.kurse
           each m in kurse
             li.official(class=clss(m) style=style(m))
@@ -37,7 +37,7 @@ block main
 
       if unmapped.length
         #unmapped
-          h2 Weitere Kurse
+          h2 Altri Corsi
           ul.kurse
             each m in unmapped
               li(class=clss(m) style=style(m))

@@ -3,7 +3,7 @@ extends /template.pug
 block vars
   - const current = episodes.shift()
   - const title = categoryName
-  - const description = 'Wir bringen dir die Bitcoin-News der Woche, sowie zusätzlich Interviews und die besten Artikel als Lesestunde. Außerdem erfährst du in "Der Weg" wie andere Leute zu Bitcoin gekommen sind.'
+  - const description = 'Vi riportiamo le notizie su Bitcoin della settimana, oltre a interviste e molto altro. Potete anche scoprire come altre persone sono entrate in Bitcoin.'
   - const cardImage = `/img/cover/${category}.png`
 
 block main
@@ -14,13 +14,13 @@ block main
       +categories(categoryName)
 
       h1= categoryName
-      h2 Aktuelle Episode
+      h2 Ultimo Episodio
       .latest
         +episodePlayer(current)
 
     if episodes.length
       section
-        h2 Weitere Episoden
+        h2 Altri Episodi
         .episodes
           each e in episodes
             +episodeItem(e)
