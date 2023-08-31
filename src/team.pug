@@ -1,0 +1,30 @@
+extends /template.pug
+
+block vars
+  - const title = 'Team'
+  - const description = 'Una volta alla settimana, il team si riunisce e discute di ciò che accade in Bitcoin e nel mondo.'
+  - const members = Object.values(team)
+  - const core = members.slice(0, 5)
+  - const crew = members.slice(5)
+
+block main
+  #team.wrap
+    section
+      h1= title
+
+      :markdown-it(html linkify typographer)
+        Una volta alla settimana, i ragazzi si siedono e discutono degli ultimi avvenimenti in Bitcoin e nel mondo.
+
+        [Vi]() proponiamo le [News]() della settimana, oltre a [Interviste]() e
+        ai migliori [Articoli]() da leggere.
+        Potete anche scoprire [come]() altre persone sono entrate in Bitcoin.
+
+      h2 Core
+      ul.members(data-shuffle)
+        each m in shuffle(core)
+          +member(m)
+    section
+      h2 Crew
+      ul.members(data-shuffle)
+        each m in shuffle(crew)
+          +member(m)
