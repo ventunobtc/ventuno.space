@@ -1,0 +1,91 @@
+[
+  {
+    "name": "RaspiBlitz",
+    "github": "RaspiBlitz",
+    "twitter": "RaspiBlitz",
+    "avatar": "/img/donation/raspiblitz.jpg",
+    "description": "Der [RaspiBlitz](https://github.com/rootzoll/raspiblitz/) ist eine Do-It-Yourself Bitcoin-Fullnode,  die auf einem Raspberry Pi läuft und eine einfache Einrichtung ermöglicht. Der RaspiBlitz zielt hauptsächlich darauf ab, zu lernen, die eigenen Node von zu Hause aus zu betreiben - denn: Not your node, not your rules.",
+    "info": "Summe: 1.000.000 Sats"
+  },
+  {
+    "name": "BTC21",
+    "twitter": "btc21_de",
+    "avatar": "/img/donation/btc21.jpg",
+    "description": "Die Website [BTC21.de](https://btc21.de) ist die beste deutschsprachige Anlaufstelle für Infos, wenn es um Bitcoin und Lightning geht. Joko sucht immer nach Unterstützern die ihm bei der ganzen Arbeit helfen wollen, meldet euch also beim Joko wenn ihr auch mitarbeiten wollt.",
+    "info": "Summe: 1.000.000 Sats"
+  },
+  {
+    "name": "Specter",
+    "github": "cryptoadvance/specter-desktop",
+    "twitter": "SpecterWallet",
+    "avatar": "/img/donation/specter.png",
+    "description": "[Specter Desktop](https://github.com/cryptoadvance/specter-desktop) ist eine Wallet-App. Sie vereinfacht es den eigenen Node für Transaktionen zu verwenden und verbessert so die Sicherheit und Privatsphäre des Nutzers. Weiterhin ist Specter mit allen gängigen Hardware-Wallets kompatibel und insbesondere für Multi-Signature-Wallets geeignet.",
+    "info": "Summe: 1.000.000 Sats"
+  },
+  {
+    "name": "Rene Pickhardt",
+    "github": "renepickhardt",
+    "twitter": "renepickhardt",
+    "avatar": "https://avatars.githubusercontent.com/u/1926816?s=460",
+    "description": "René Pickhardt hat zusammen mit Stefan Richter einen neuen Weg erforscht, um die Zahlungsrouten im Lightning Network zu optimieren. Diese Entdeckung kann das Netzwerk effizienter und zuverlässiger machen und dadurch einen Schritt näher an die Massentauglichkeit bringen.",
+    "info": "Summe: 1.000.000 Sats"
+  },
+  {
+    "name": "YouTube Tutorials",
+    "twitter": "_einundzwanzig_",
+    "avatar": "/img/donation/einundzwanzig-youtube.png",
+    "description": "Um die technischen Aspekte von Bitcoin besser zu erklären, haben wir unseren [Youtube-Kanal](https://www.youtube.com/c/EinundzwanzigPodcast) gegründet und dort die Ersteller der ersten Tutorials mit jeweils 50k Sats entlohnt.",
+    "info": "Summe: 1.050.000 Sats"
+  },
+  {
+    "name": "Cyberhornets",
+    "twitter": "cyberhornets21",
+    "avatar": "/img/donation/cyberhornets.jpg",
+    "description": "Die [Cyberhornets](https://twitter.com/cyberhornets21) sind ein Jugend-Fussballteam, Bitcoin Natives, die eine Welt ohne Bitcoin nicht kennen. Wir haben uns entschlossen die Hornets bei ihrer Torejagd zu unterstützen und sind als Sponsor eingesprungen.",
+    "info": "Summe: 1.988.438 Sats"
+  },
+  {
+    "name": "Einundzwanzig Bienenvolk",
+    "twitter": "jurgi7",
+    "avatar": "/img/donation/summherum.png",
+    "description": "Eine kleine [Imkerei](https://beetc.at/) aus dem Bregenzerwald und bekannt für die Bitcoin-Bienen. Per Crowdfunding wurde ein EINUNZWANZIG Bienenvolk geschaffen und es sollen auch für unsere Freunde von der Blocktrainer und Fulmo Community zwei weitere hinzukommen.",
+    "info": "Die Community hat sich an dem Crowdfunding beteiligt"
+  },
+  {
+    "name": "Bitcoin Standard für Wien",
+    "twitter": "aprycotmedia",
+    "avatar": "/img/donation/bitcoin-standard.jpg",
+    "description": "Ein engagierter Wirtschaftslehrer aus Wien hat uns angeschrieben und uns um 20 Bitcoin Standard für seine Schule gebeten, dieser Bitte sind wir natürlich sehr gerne nachgekommen.",
+    "info": "Summe: 20 Bitcoin Standard"
+  },
+  {
+    "name": "Blocktrainer Event 2022",
+    "twitter": "Blocktrainer",
+    "description": "Drei Support Tickets für das [Blocktrainer Event 2022](https://www.blocktrainer.de/blocktrainer-community-event-2022/) gingen an Schüler, die wir bei den Ticketkosten unterstützt haben.",
+    "info": "Summe: 600.000 Sats"
+  },
+  {
+    "name": "Hochschulmesse Kempten",
+    "avatar": "/img/donation/buecher.jpg",
+    "description": "Im Rahmen der Hochschulmesse in Kempten wurden 21 Bitcoin Bücher in Gewinnspielen vergeben und die Hochschulbibliothek mit dem Bitcoin Standard ausgestattet.",
+    "info": "Summe: 947.000 Sats"
+  },
+  {
+    "name": "Heizen mit Mining",
+    "twitter": "Schnitzel",
+    "avatar": "/img/donation/schnitzel.jpg",
+    "description": "Wir unterstützen Michael Schmid bei seinem [Bitcoin Water Heater](https://twitter.com/Schnitzel/status/1531735932616974336) Projekt.",
+    "info": "Summe: 1.000.000 Sats"
+  },
+  {
+    "name": "Einundzwanzig Events",
+    "description": "Die [Events 2022](/events/)  — Zitadelle Schweiz, Bitcoin im Ländle, Satoshis Bleibe, Satoshis Beach und das Sommerfest im Schafstall — wurden von uns für diverse Vorhaben unterstützt.",
+    "info": "Summe: 8.000.000 Sats"
+  },
+  {
+    "name": "Defending BTC",
+    "avatar": "/img/donation/hodlonaut.png",
+    "description": "Wir unterstützten den [Defending BTC Fund](https://opensats.org/projects/opensats_legal_defense), durchgeführt von OpenSats, im Rahmen des Falls [Hodlonaut](https://bitcoinmagazine.com/culture/timeline-of-hodlonaut-craig-wright-case), um einen Teil zu den Kosten der gerichtlichen Auseinandersetzung beizutragen.",
+    "info": "Summe: 1.000.000 Sats"
+  }
+]
