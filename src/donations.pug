@@ -5,15 +5,15 @@ block vars
   - const description = 'Abbiamo già supportato i seguenti progetti, iniziative e sviluppatori con contributi di riconoscimento da parte della comunità.'
 
 block main
-  #spenden.wrap
+  #donations.wrap
     section
       h1= title
 
       h2 Panoramica
       p= description
 
-      ul.spenden
-        each s in spendenuebersicht
+      ul.donations
+        each s in donationoverview
           +spende(s)
 
       h2 Registro donazioni
@@ -23,6 +23,6 @@ block main
         È gradita l'aggiunta di nuove proposte tramite [Pull Request](https://github.com/Einundzwanzig-Podcast/einundzwanzig.space/edit/master/content/donationregister.json).
         Ecco un [video tutorial](https://www.youtube.com/watch?v=BNJc9LExEzU) su come creare una nuova richiesta di pull.
 
-      ul.spenden(data-shuffle)
-        each s in shuffle(spendenregister)
+      ul.donations(data-shuffle)
+        each s in shuffle(donationregister)
           +spende(s)

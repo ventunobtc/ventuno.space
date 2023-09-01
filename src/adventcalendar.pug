@@ -18,7 +18,7 @@ html(lang="it")
         | con il nostro albero! 🎅-//
       #tree.tree
         each i in Array.from({ length: 21 }, (_, i) => i)
-          - const [block, url] = Object.entries(adventskalender[i])[0] || []
+          - const [block, url] = Object.entries(adventcalendar[i])[0] || []
           ul.cube
             li
             li

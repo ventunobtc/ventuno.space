@@ -1,10 +1,10 @@
-#spenden {
-  & .spenden {
+#donations {
+  & .donations {
     margin-top: var(--space-xl);
   }
 }
 
-.spenden {
+.donations {
   list-style: none;
   display: grid;
   grid-gap: var(--space-xl);
@@ -22,7 +22,7 @@
   }
 }
 
-.spenden + h2 {
+.donations + h2 {
   margin-top: calc(var(--space-xxl) * 1.5);
 }
 
