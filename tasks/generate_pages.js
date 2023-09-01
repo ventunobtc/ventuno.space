@@ -35,10 +35,10 @@ renderPage('podcast', 'podcast', { navCurrent: 'podcast', episodes: [...episodes
 
 renderPage('meetups', 'meetup', { navCurrent: 'meetups', meetups: meetupsSorted })
 renderPage('events', 'eventi', { navCurrent: 'events' })
-renderPage('kurse', 'corsi', { navCurrent: 'corsi', kurse })
+renderPage('courses', 'corsi', { navCurrent: 'corsi', kurse })
 renderPage('guides', 'guide', { navCurrent: 'guide' })
 renderPage('books', 'libri', { navCurrent: 'libri' })
-renderPage('spenden', 'donazioni', { navCurrent: 'donazioni', spendenregister, spendenuebersicht })
+renderPage('donations', 'donazioni', { navCurrent: 'donazioni', spendenregister, spendenuebersicht })
 renderPage('shops', 'shop', { navCurrent: 'shops', shops })
 
 renderPage('media', 'media', { navCurrent: 'media' })
@@ -56,7 +56,7 @@ renderPage('verein', 'verein', { navCurrent: 'verein' })
 renderPage('kontakt', 'kontakt', { navCurrent: 'kontakt' })
 renderPage('datenschutz', 'datenschutz', { navCurrent: 'datenschutz' })
 
-renderPage('adventskalender', 'avvento', { adventskalender })
+renderPage('adventcalendar', 'avvento', { adventskalender })
 renderPage('gesundes-geld', 'gesundes-geld', { meetups: meetupsSorted })
 
 renderPage('category', 'podcast/news', { navCurrent: 'podcast', category: 'news', categoryName: 'News', episodes: episodes.filter(e => e.category === 'news') })
