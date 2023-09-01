@@ -6,10 +6,10 @@ mixin categories(current)
   ul.categories
     li: a(href="/podcast/" class=(!current && 'current')) Tutti
     li: a(href="/podcast/news/" class=(current === 'News' && 'current')) News
-    li: a(href="/podcast/interviews/" class=(current === 'Interviews' && 'current')) Interviste
-    li: a(href="/podcast/lesestunde/" class=(current === 'Lesestunde' && 'current')) Letteratura
+    li: a(href="/podcast/interviste/" class=(current === 'Interviews' && 'current')) Interviste
+    li: a(href="/podcast/letteratura/" class=(current === 'Literature' && 'current')) Letteratura
     li: a(href="/podcast/der-weg/" class=(current === 'Der Weg' && 'current')) Percorso
-    li: a(href="/podcast/verschiedenes/" class=(current === 'Verschiedenes' && 'current')) Varie
+    li: a(href="/podcast/varie/" class=(current === 'Verschiedenes' && 'current')) Varie
 
 mixin member(m)
   li.member(id=m.name)
@@ -107,7 +107,7 @@ mixin spende(d, trunc = false)
       .foot
         if d.spendenURL
           a.button(href=d.spendenURL target="_blank" rel="nofollow noopener")
-            = `Spende an ${d.name}`
+            = `Dona a ${d.name}`
         else if d.info
           p.info= d.info
 
@@ -187,4 +187,4 @@ mixin subscribe()
       ]
     }
   script(src="https://cdn.podlove.org/subscribe-button/javascripts/app.js" class="podlove-subscribe-button" data-language="de" data-size="big" data-json-data="subscribe" data-color=themeColor data-format="rectangle")
-  noscript: a.button(href=site.meta.publicFeedUrl) Jetzt abonnieren
+  noscript: a.button(href=site.meta.publicFeedUrl) Iscriviti
