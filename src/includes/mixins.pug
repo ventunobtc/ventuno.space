@@ -79,8 +79,8 @@ mixin meetupMap()
         }
       })).join(','))
 
-mixin spende(d, trunc = false)
-  .spende(id=d.id)&attributes(attributes)
+mixin donation(d, trunc = false)
+  .donation(id=d.id)&attributes(attributes)
     .inner
       img.avatar(src=assetPath(d.avatar || "/img/avatar.svg") alt=d.name)
       h3.name= d.name

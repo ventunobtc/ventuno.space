@@ -14,7 +14,7 @@ block main
 
       ul.donations
         each s in donationoverview
-          +spende(s)
+          +donation(s)
 
       h2 Registro donazioni
       p Consideriamo questi progetti, iniziative e sviluppatori degni di essere sostenuti.
@@ -25,4 +25,4 @@ block main
 
       ul.donations(data-shuffle)
         each s in shuffle(donationregister)
-          +spende(s)
+          +donation(s)
