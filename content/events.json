@@ -1,0 +1,42 @@
+[
+  {
+    "name": "BTC23",
+    "url": null,
+    "date": "14.-17. Settembre 2023",
+    "country": "AT",
+    "state": ["Baden-Württemberg"],
+    "city": "Innsbruck",
+    "longitude": 20.9662187,
+    "latitude": 41.0091982
+  },
+  {
+    "name": "Bitcoin Zitadelle",
+    "url": null,
+    "date": "13.-16. Luglio 2023",
+    "country": "AT",
+    "state": ["Baden-Württemberg"],
+    "city": "tba",
+    "longitude": 28.9662187,
+    "latitude": 41.0091982
+  },
+  {
+    "name": "Bitcoin Baden 2022",
+    "url": "https://bitcoinbaden.ch/",
+    "date": "14.-17. Settembre 2022",
+    "country": "CH",
+    "state": ["Baden-Württemberg"],
+    "city": "Baden",
+    "longitude": 35.9662187,
+    "latitude": 41.0091982
+  },
+  {
+    "name": "Satoshis Beach",
+    "url": "/events/satoshis-beach-2022",
+    "date": "18 Giugno 2022",
+    "country": "DE",
+    "state": ["Hessen"],
+    "city": "Essen",
+    "longitude": 28.9662187,
+    "latitude": 21.0091982
+  }
+]
