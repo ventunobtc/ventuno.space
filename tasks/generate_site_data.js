@@ -84,14 +84,16 @@ const sounds = soundboard.map(group => {
 
 writeJSON(dir('dist', 'sounds.json'), sounds)
 
-// Spendenregister
-const spendenregisterDir = dir('content', 'spendenregister')
-const spendenregister = readdirSync(spendenregisterDir).map(filename => {
-  const filePath = join(spendenregisterDir, filename)
-  const spende = require(filePath)
-  spende.id = basename(filename, '.json')
-  return spende
-})
+/* Donationregister
+const donationregisterDir = dir('content', 'donationregister')
+const donationregister = readdirSync(donationregisterDir).map(filename => {
+  const filePath = join(donationregisterDir, filename)
+  const donation = require(filePath)
+  donation.id = basename(filename, '.json')
+  return donation
+})*/
 
-writeJSON(dir('generated', 'spendenregister.json'), spendenregister)
-writeJSON(dir('dist', 'spendenregister.json'), spendenregister)
+const donationregister = require('../content/donationregister.json')
+
+writeJSON(dir('generated', 'donationregister.json'), donationregister)
+writeJSON(dir('dist', 'donationregister.json'), donationregister)
