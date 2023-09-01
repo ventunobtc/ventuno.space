@@ -85,9 +85,9 @@ mixin donation(d, trunc = false)
       img.avatar(src=assetPath(d.avatar || "/img/avatar.svg") alt=d.name)
       h3.name= d.name
       .center
-        if d.beschreibung
+        if d.description
           .description
-            - const [head, tail] = trunc ? truncate(d.beschreibung, 21) : [d.beschreibung]
+            - const [head, tail] = trunc ? truncate(d.description, 21) : [d.description]
             - const description = tail ? `${head} <a href="#${d.id}" class="showMore">[…&nbsp;mehr]</a> <span class="more">${tail}</span>` : head
             != markdown(description)
         if d.tags
@@ -105,8 +105,8 @@ mixin donation(d, trunc = false)
           if d.github
             a.github(href=`https://github.com/${d.github}` target="_blank" rel="nofollow noopener"): +sprite('github', 'GitHub')
       .foot
-        if d.spendenURL
-          a.button(href=d.spendenURL target="_blank" rel="nofollow noopener")
+        if d.donationURL
+          a.button(href=d.donationURL target="_blank" rel="nofollow noopener")
             = `Dona a ${d.name}`
         else if d.info
           p.info= d.info
