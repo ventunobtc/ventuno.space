@@ -1,0 +1,62 @@
+[
+  {
+    "name": "21 Lezioni",
+    "url": "https://t.me/einundzwanzigpodcast",
+    "description" : "Superbe lezioni di Bitcoin",
+    "authors" : ["Dergigi"]
+  },
+  {
+    "name": "Il Bitcoin Standard",
+    "url": "https://t.me/einundzwanzigbitcoin",
+    "description" : "Lettura essenziale",
+    "authors" : ["Saifedean Ammous"]
+  },
+  {
+    "name": "Bitcoin 199 domande",
+    "url": "https://t.me/einundzwanzig_offtopic",
+    "description" : "Risposte molto concise a 199 domande su bitcoin",
+    "authors" : ["Alessio Barnini", " Alessandro Aglietti"]
+  },
+  {
+    "name": "Bitcoin: Dalla teoria alla pratica",
+    "url": "https://t.me/+KBKIPLBfoxtkNzE0",
+    "description" : "Spiegazione passo passo di bitcoin con tutorial di codice",
+    "authors" : ["Alessio Barnini", " Alessandro Aglietti"]
+  },
+  {
+    "name": "Mastering Bitcoin",
+    "url": "https://t.me/einundzwanzigpodcast",
+    "description" : "Guida tecnica su Bitcoin",
+    "authors" : ["Andreas M. Antonopoulos"]
+  },
+  {
+    "name": "Mastering Lightning Network",
+    "url": "https://t.me/einundzwanzigbitcoin",
+    "description" : "Guida tecnica su Lightning Network",
+    "authors" : ["Andreas M. Antonopoulos", " Olaoluwa Osuntokun", " Rene Pickhardt"]
+  },
+  {
+    "name": "Criptoeconomia",
+    "url": "https://t.me/einundzwanzig_offtopic",
+    "description" : "Principi fondamentali di Bitcoin",
+    "authors" : ["Eric Voskuil", " James Chaing"]
+  },
+  {
+    "name": "Domande e risposte su Bitcoin",
+    "url": "https://t.me/+KBKIPLBfoxtkNzE0",
+    "description" : "Dal concetto di blockchain alla definizione della suite LNP/BP",
+    "authors" : ["David Coen"]
+  },
+  {
+    "name": "Protocollo Bitcoin",
+    "url": "https://t.me/einundzwanzig_offtopic",
+    "description" : "Fondamenti per capire la tecnologia delle criptovalute e le sue applicazioni",
+    "authors" : ["Umberto Tarantino"]
+  },
+  {
+    "name": "Villaggio Bitcoin",
+    "url": "https://t.me/+KBKIPLBfoxtkNzE0",
+    "description" : "L'alba di una nuova società basata su una moneta sana e onesta",
+    "authors" : ["Valerio dalla Costa"]
+  }
+]
