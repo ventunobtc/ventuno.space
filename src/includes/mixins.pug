@@ -10,6 +10,7 @@ mixin categories(current)
     li: a(href="/podcast/letteratura/" class=(current === 'Literature' && 'current')) Letteratura
     li: a(href="/podcast/der-weg/" class=(current === 'Der Weg' && 'current')) Percorso
     li: a(href="/podcast/varie/" class=(current === 'Verschiedenes' && 'current')) Varie
+//-vanno modificate anche in "generate_page.js" e "fetch_feed.js"
 
 mixin member(m)
   li.member(id=m.name)
@@ -44,7 +45,7 @@ mixin map(id, markers)
         map: 'europe_mill',
         backgroundColor: 'transparent',
         markers,
-        focusOn: ['DE', 'AT', 'CH', 'LI', 'LU'],
+        focusOn: ['IT', 'AT', 'CH'],
         regionStyle: {
           initial: {
             'fill': 'var(--color-map-region)',
@@ -173,7 +174,7 @@ mixin episodePlayer(e)
 mixin subscribe()
   script.
     window.subscribe = {
-      title: "Einundzwanzig",
+      title: "Ventuno",
       subtitle: "Il nostro Bitcoin Podcast",
       description: "#{site.meta.description}",
       cover: "#{assetUrl(site.meta.cardImage)}",
@@ -186,5 +187,5 @@ mixin subscribe()
         }
       ]
     }
-  script(src="https://cdn.podlove.org/subscribe-button/javascripts/app.js" class="podlove-subscribe-button" data-language="de" data-size="big" data-json-data="subscribe" data-color=themeColor data-format="rectangle")
+  script(src="https://cdn.podlove.org/subscribe-button/javascripts/app.js" class="podlove-subscribe-button" data-language="en" data-size="big" data-json-data="subscribe" data-color=themeColor data-format="rectangle")
   noscript: a.button(href=site.meta.publicFeedUrl) Iscriviti

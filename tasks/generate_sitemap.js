@@ -4,10 +4,10 @@ const { writeFileSync } = require('fs')
 const { resolve } = require('path')
 
 const { DEPLOY_PRIME_URL, URL } = process.env
-const BASE = DEPLOY_PRIME_URL || URL || 'https://einundzwanzig.space'
+const BASE = DEPLOY_PRIME_URL || URL || 'https://einundzwanzig.space'      //va modificato
 
 const html = globSync(resolve(__dirname, '..', `dist/**/*.html`))
-const pages = html.map(file => file.replace(/.*\/dist/, BASE).replace(/index\.html$/, '')).filter(f => !f.endsWith('/kontakt/') && !f.endsWith('/datenschutz/'))
+const pages = html.map(file => file.replace(/.*\/dist/, BASE).replace(/index\.html$/, '')).filter(f => !f.endsWith('/contact/') && !f.endsWith('/privacy/'))
 const now = (new Date()).toISOString()
 const file = resolve(__dirname, '..', `src/sitemap.pug`)
 const rendered = pug.renderFile(file, { pages, now, pretty: true })

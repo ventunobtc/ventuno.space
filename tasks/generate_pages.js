@@ -44,7 +44,7 @@ renderPage('shops', 'shop', { navCurrent: 'shops', shops })
 renderPage('media', 'media', { navCurrent: 'media' })
 renderPage('social', 'social', { navCurrent: 'social' })
 renderPage('team', 'team', { navCurrent: 'team', team })
-renderPage('soundboard', 'soundboard', { navCurrent: 'soundboard', soundboard })
+// renderPage('soundboard', 'soundboard', { navCurrent: 'soundboard', soundboard })
 renderPage('telegram', 'telegram', { navCurrent: 'telegram', telegram: site.telegram })
 
 renderPage('events/satoshis-bleibe-2022', 'events/satoshis-bleibe-2022', { navCurrent: 'events'})
@@ -52,9 +52,9 @@ renderPage('events/bitcoin-im-laendle-2022', 'events/bitcoin-im-laendle-2022', {
 renderPage('events/sommerfest-hodler-heide-2022', 'events/sommerfest-hodler-heide-2022', { navCurrent: 'events'})
 renderPage('events/satoshis-beach-2022', 'events/satoshis-beach-2022', { navCurrent: 'events'})
 
-renderPage('verein', 'verein', { navCurrent: 'verein' })
-renderPage('kontakt', 'kontakt', { navCurrent: 'kontakt' })
-renderPage('datenschutz', 'datenschutz', { navCurrent: 'datenschutz' })
+// renderPage('verein', 'verein', { navCurrent: 'verein' })
+renderPage('contact', 'contact', { navCurrent: 'contact' })
+renderPage('privacy', 'privacy', { navCurrent: 'privacy' })
 
 renderPage('adventcalendar', 'avvento', { adventcalendar })
 renderPage('gesundes-geld', 'gesundes-geld', { meetups: meetupsSorted })
