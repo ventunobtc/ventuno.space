@@ -25,16 +25,21 @@ const renderPage = (template, out, data = {}) => {
   writeFileSync(dst, rendered)
 }
 
-const sortId = m => `${m.country === 'DE' ? '0' : m.country}-${m.name}`
+const sortMeetupId = m => `${m.country === 'IT' ? '0' : m.country}-${m.name}`
 const meetupsSorted = site.meetups.sort((a, b) => {
-  return sortId(a) > sortId(b) ? 1 : -1
+  return sortMeetupId(a) > sortMeetupId(b) ? 1 : -1
+})
+
+const sortEventId = m => `${m.country === 'IT' ? '0' : m.country}-${m.name}`
+const eventsSorted = site.events.sort((a, b) => {
+  return sortEventId(a) > sortEventId(b) ? 1 : -1
 })
 
 renderPage('index', 'index', { navCurrent: 'index', currentEpisode: episodes[0] })
 renderPage('podcast', 'podcast', { navCurrent: 'podcast', episodes: [...episodes] })
 
 renderPage('meetups', 'meetup', { navCurrent: 'meetups', meetups: meetupsSorted })
-renderPage('events', 'eventi', { navCurrent: 'events' })
+renderPage('events', 'eventi', { navCurrent: 'events', events: eventsSorted })
 renderPage('courses', 'corsi', { navCurrent: 'corsi', courses })
 renderPage('guides', 'guide', { navCurrent: 'guide' })
 renderPage('books', 'libri', { navCurrent: 'libri' })

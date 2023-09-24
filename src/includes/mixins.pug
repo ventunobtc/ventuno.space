@@ -45,7 +45,7 @@ mixin map(id, markers)
         map: 'europe_mill',
         backgroundColor: 'transparent',
         markers,
-        focusOn: ['IT', 'AT', 'CH'],
+        focusOn: ['IT', 'CH'],
         regionStyle: {
           initial: {
             'fill': 'var(--color-map-region)',
@@ -68,7 +68,7 @@ mixin map(id, markers)
       mapNameByCode(code, multiMap) {
         return `${code.toLowerCase()}_${multiMap.defaultProjection}`;
       }
-    });
+    });  
 
 mixin meetupMap()
   +map('meetupMap', meetups.map(m => JSON.stringify({
@@ -76,7 +76,17 @@ mixin meetupMap()
         latLng: [m.latitude, m.longitude],
         url: m.url,
         style: {
-          fill: m.name.startsWith('Einundzwanzig') || m.name.includes('Einezwänzg') || m.name.includes('Eenanzwanzeg') || m.name.includes('Yirmibir') ? 'var(--color-accent)' : 'var(--color-neutral-50)'
+          fill: m.name.startsWith('SatoshiSpritz') ? 'var(--color-accent)' : 'var(--color-neutral-50)'
+        }
+      })).join(','))
+
+mixin eventMap()
+  +map('eventMap', events.map(m => JSON.stringify({
+        name: m.name,
+        latLng: [m.latitude, m.longitude],
+        url: m.url,
+        style: {
+          fill: m.name.startsWith('Ventuno') ? 'var(--color-accent)' : 'var(--color-neutral-50)'
         }
       })).join(','))
 

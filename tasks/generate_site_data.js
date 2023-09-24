@@ -53,22 +53,28 @@ const telegramData = telegram.map(t =>
   })
 )
 
-// Meetups
+// Meetups and events
 let meetups = []
+let events = []
 try {
-  meetups = loadJson('https://portal.einundzwanzig.space/api/meetups')
+  //meetups = loadJson('https://portal.einundzwanzig.space/api/meetups')
+  meetups = require('../content/meetups.json')
+  events = require('../content/events.json')
+
 } catch (err) {
   console.error('Could not load meetups:', err)
-  meetups = require('../content/meetups-do-not-edit.json')
+  //meetups = require('../content/meetups-do-not-edit.json')
 }
 
 writeJSON(dir('dist', 'meetups.json'), meetups)
+writeJSON(dir('dist', 'events.json'), events)
 
 writeJSON(dir('generated', 'site-data.json'), {
   date,
   block,
   meta,
   meetups,
+  events,
   telegram: telegramData
 })
 
