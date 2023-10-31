@@ -62,7 +62,6 @@ renderPage('contact', 'contact', { navCurrent: 'contact' })
 renderPage('privacy', 'privacy', { navCurrent: 'privacy' })
 
 renderPage('adventcalendar', 'avvento', { adventcalendar })
-renderPage('gesundes-geld', 'gesundes-geld', { meetups: meetupsSorted })
 
 renderPage('category', 'podcast/news', { navCurrent: 'podcast', category: 'news', categoryName: 'News', episodes: episodes.filter(e => e.category === 'news') })
 renderPage('category', 'podcast/ingterviste', { navCurrent: 'podcast', category: 'interview', categoryName: 'Interviews', episodes: episodes.filter(e => e.category === 'interview') })
