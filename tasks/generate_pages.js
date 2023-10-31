@@ -61,7 +61,7 @@ renderPage('events/satoshis-beach-2022', 'events/satoshis-beach-2022', { navCurr
 renderPage('contact', 'contact', { navCurrent: 'contact' })
 renderPage('privacy', 'privacy', { navCurrent: 'privacy' })
 
-renderPage('adventcalendar', 'avvento', { adventcalendar })
+//renderPage('adventcalendar', 'avvento', { adventcalendar })
 
 renderPage('category', 'podcast/news', { navCurrent: 'podcast', category: 'news', categoryName: 'News', episodes: episodes.filter(e => e.category === 'news') })
 renderPage('category', 'podcast/ingterviste', { navCurrent: 'podcast', category: 'interview', categoryName: 'Interviews', episodes: episodes.filter(e => e.category === 'interview') })

@@ -9,6 +9,7 @@ block vars
 html(lang="it")
   head
     include includes/_head
+    include includes/_adventcalendar
     link(href=assetPath("/css/adventcalendar.css") rel="stylesheet")
   body
     main.main
@@ -31,11 +32,11 @@ html(lang="it")
           li
           li: a(href="/"): +sprite("logo-square").logo
           li
-      p
+      //-p
         = "Danke validblock"
         br
         = " für den schönen Baum! 🎄"
-      a(href="/") Zurück zur Homepage
+      //-a(href="/") Zurück zur Homepage
 
     include includes/_footer
     
