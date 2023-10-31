@@ -12,7 +12,7 @@ block main
 
       :markdown-it(html linkify typographer)
         È possibile richiedere l'aggiunta di nuovi gruppi effettuando una [Pull Request](https://github.com/ventunobtc/ventuno.space/edit/master/content/telegram.json).
-        Ecco un [video tutorial]() su come creare una nuova richiesta di pull.
+        <!--Ecco un [video tutorial]() su come creare una nuova richiesta di pull.-->
 
       ul
         each group in telegram
@@ -20,4 +20,4 @@ block main
             a(href=group.url rel="nofollow noopener" target="_blank")= group.name
             if group.members
               = ' '
-              small.members= `(${group.members} Mitglieder)`
+              small.members= `(${group.members} Membri)`

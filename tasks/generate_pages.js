@@ -40,7 +40,7 @@ renderPage('podcast', 'podcast', { navCurrent: 'podcast', episodes: [...episodes
 
 renderPage('meetups', 'meetup', { navCurrent: 'meetups', meetups: meetupsSorted })
 renderPage('events', 'eventi', { navCurrent: 'events', events: eventsSorted })
-renderPage('courses', 'corsi', { navCurrent: 'corsi', courses })
+//renderPage('courses', 'corsi', { navCurrent: 'corsi', courses })
 renderPage('guides', 'guide', { navCurrent: 'guide' })
 renderPage('books', 'libri', { navCurrent: 'libri' })
 renderPage('donations', 'donazioni', { navCurrent: 'donazioni', donationregister, donationoverview })
@@ -49,17 +49,17 @@ renderPage('shops', 'shop', { navCurrent: 'shops', shops })
 renderPage('media', 'media', { navCurrent: 'media' })
 renderPage('social', 'social', { navCurrent: 'social' })
 renderPage('team', 'team', { navCurrent: 'team', team })
-// renderPage('soundboard', 'soundboard', { navCurrent: 'soundboard', soundboard })
-renderPage('telegram', 'telegram', { navCurrent: 'telegram', telegram: site.telegram })
+//renderPage('soundboard', 'soundboard', { navCurrent: 'soundboard', soundboard })
+//renderPage('telegram', 'telegram', { navCurrent: 'telegram', telegram: site.telegram })
 
 renderPage('events/satoshis-bleibe-2022', 'events/satoshis-bleibe-2022', { navCurrent: 'events'})
 renderPage('events/bitcoin-im-laendle-2022', 'events/bitcoin-im-laendle-2022', { navCurrent: 'events' })
 renderPage('events/sommerfest-hodler-heide-2022', 'events/sommerfest-hodler-heide-2022', { navCurrent: 'events'})
 renderPage('events/satoshis-beach-2022', 'events/satoshis-beach-2022', { navCurrent: 'events'})
 
-// renderPage('verein', 'verein', { navCurrent: 'verein' })
-renderPage('contact', 'contact', { navCurrent: 'contact' })
-renderPage('privacy', 'privacy', { navCurrent: 'privacy' })
+//renderPage('verein', 'verein', { navCurrent: 'verein' })
+//renderPage('contact', 'contact', { navCurrent: 'contact' })
+//renderPage('privacy', 'privacy', { navCurrent: 'privacy' })
 
 //renderPage('adventcalendar', 'avvento', { adventcalendar })
 
