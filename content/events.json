@@ -1,42 +1,42 @@
 [
   {
-    "name": "BTC23",
-    "url": null,
-    "date": "14.-17. Settembre 2023",
-    "country": "AT",
-    "state": ["Baden-Württemberg"],
-    "city": "Innsbruck",
-    "longitude": 20.9662187,
-    "latitude": 41.0091982
+    "name": "Bitcoin Atlantis",
+    "url": "https://bitcoinatlantis.com",
+    "date": "1-3 Marzo 2024",
+    "country": "PT",
+    "state": ["Portogallo"],
+    "city": "Madeira",
+    "longitude": -16.9817487,
+    "latitude": 32.7517501
   },
   {
-    "name": "Bitcoin Zitadelle",
-    "url": null,
-    "date": "13.-16. Luglio 2023",
-    "country": "AT",
-    "state": ["Baden-Württemberg"],
-    "city": "tba",
-    "longitude": 28.9662187,
-    "latitude": 41.0091982
+    "name": "BTC Prague 2024",
+    "url": "https://btcprague.com",
+    "date": "13-15 Giugno 2024",
+    "country": "CZ",
+    "state": ["Repubblica Ceca"],
+    "city": "Praga",
+    "longitude": 14.4212535,
+    "latitude": 50.0874654
   },
   {
-    "name": "Bitcoin Baden 2022",
-    "url": "https://bitcoinbaden.ch/",
-    "date": "14.-17. Settembre 2022",
+    "name": "Baltic Honey Badger",
+    "url": "https://baltichoneybadger.com",
+    "date": "2-3 Settembre 2023",
+    "country": "LV",
+    "state": ["Lettonia"],
+    "city": "Riga",
+    "longitude": 24.1051846,
+    "latitude": 56.9493977
+  },
+  {
+    "name": "Lugano PlanB Forum",
+    "url": "https://planb.lugano.ch/planb-forum/",
+    "date": "25-26 Ottobre 2024",
     "country": "CH",
-    "state": ["Baden-Württemberg"],
-    "city": "Baden",
-    "longitude": 35.9662187,
-    "latitude": 41.0091982
-  },
-  {
-    "name": "Satoshis Beach",
-    "url": "/events/satoshis-beach-2022",
-    "date": "18 Giugno 2022",
-    "country": "DE",
-    "state": ["Hessen"],
-    "city": "Essen",
-    "longitude": 28.9662187,
-    "latitude": 21.0091982
+    "state": ["Svizzera"],
+    "city": "Lugano",
+    "longitude": 8.9520281,
+    "latitude": 46.0050102
   }
 ]

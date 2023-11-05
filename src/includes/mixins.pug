@@ -33,7 +33,44 @@ mixin member(m)
     if m.text
       !=markdown(m.text)
 
-mixin map(id, markers)
+mixin mapMeetups(id, markers)
+  .vectorMap(id=id)
+  script.
+    const markers = [!{markers}];
+    // https://jvectormap.com/documentation/javascript-api/jvm-map/
+    new jvm.MultiMap({
+      container: $(`#!{id}`),
+      maxLevel: 1,
+      main: {
+        map: 'it_mill',
+        backgroundColor: 'transparent',
+        markers,
+        focusOn: ['IT', 'CH'],
+        regionStyle: {
+          initial: {
+            'fill': 'var(--color-map-region)',
+            'stroke': 'var(--color-map-outline)',
+            'stroke-width': .25
+          },
+          hover: {
+            'fill-opacity': .8,
+            cursor: 'pointer'
+          }
+        },
+        onMarkerClick(event, index) {
+          const marker = markers[index]
+          if (marker.url) window.open(marker.url, '_blank');
+        }
+      },
+      mapUrlByCode(code, multiMap) {
+        return `/vendor/jvectormap/maps/${code.toLowerCase()}_${multiMap.defaultProjection}.js`;
+      },
+      mapNameByCode(code, multiMap) {
+        return `${code.toLowerCase()}_${multiMap.defaultProjection}`;
+      }
+    });  
+
+mixin mapEvents(id, markers)
   .vectorMap(id=id)
   script.
     const markers = [!{markers}];
@@ -71,17 +108,17 @@ mixin map(id, markers)
     });  
 
 mixin meetupMap()
-  +map('meetupMap', meetups.map(m => JSON.stringify({
+  +mapMeetups('meetupMap', meetups.map(m => JSON.stringify({
         name: m.name,
         latLng: [m.latitude, m.longitude],
         url: m.url,
         style: {
-          fill: m.name.startsWith('SatoshiSpritz') ? 'var(--color-accent)' : 'var(--color-neutral-50)'
+          fill: m.name.startsWith('Satoshi Spritz') ? 'var(--color-accent)' : 'var(--color-neutral-50)'
         }
       })).join(','))
 
 mixin eventMap()
-  +map('eventMap', events.map(m => JSON.stringify({
+  +mapEvents('eventMap', events.map(m => JSON.stringify({
         name: m.name,
         latLng: [m.latitude, m.longitude],
         url: m.url,

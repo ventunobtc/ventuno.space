@@ -20,15 +20,13 @@ block main
       p= description
 
       ul
-        //- li
-        //-   = "14.-17. September 2023: "
-        //-   span BTC23, Innsbruck (AT)
-
-      h2 Eventi Passati
-      ul
-        //- li
-        //-   = "03. Dezember 2022: "
-        //-   a(href="http://bitcoinbaden.ch" rel="nofollow noopener" target="_blank") Bitcoin Baden 2022, Baden (CH)
+        each event in events
+          li
+            = event.date
+            = ': '
+            a(href=event.url rel="nofollow noopener" target="_blank")= event.name
+        
+      //-h2 Eventi Passati
 
   div(style="margin-bottom: calc(var(--space-xxl) * -1)")
     +eventMap()
