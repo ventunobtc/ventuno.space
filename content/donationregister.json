@@ -1,32 +1,11 @@
 [
   {
-    "name": "Anthony Potdevin",
-    "github": "apotdevin",
-    "twitter": "tonyioi",
-    "donationURL": "https://github.com/sponsors/apotdevin",
-    "avatar": "https://avatars3.githubusercontent.com/u/31413433?s=460&u=719e165488e0c8092bb234f7180140d53bcc382c&v=4",
-    "description": "Freier Entwickler aus München, der hauptsächlich an der Entwicklung des Lightning-Node-Managers [ThunderHub](https://github.com/apotdevin/thunderhub) arbeitet. Dabei handelt es sich um eine freie Open-Source Lösung für die Verwaltung der eigenen Lightning-Node auf einem dedizierten Gerät, wie z.B. dem RaspiBlitz."
-  },
-  {
-    "name": "Bitcoin Smiles",
-    "twitter": "BitcoinSmiles",
-    "donationURL": "https://bitcoinsmiles.org/",
-    "avatar": "/img/donation/bitcoinsmiles.jpg",
-    "description": "Initiative des einzigen Zahnarztes aus dem durch den Bitcoin Beach bekannten Ferienort El Zonte in El Salvador. Ziel der Initiative ist es, der lokalen Bevölkerung eine bessere Zahnmedizin zu bieten, die sie sich selbst nicht leisten könnten. Insbesondere älteren Leuten fehlt häufig das Geld für eine ausreichende Behandlung der Zähne."
-  },
-  {
-    "name": "BTC21 Bounty Programm",
-    "twitter": "btc21_de",
-    "donationURL": "http://bounties.btc21.de",
-    "avatar": "/img/donation/btc21.jpg",
-    "description": "Hochqualitatives Bitcoin-only Magazin, welches nun die Möglichkeit bietet, eigene Artikel zu veröffentlichen, die in Sats vergütet werden. Dazu können neue Themen gegen eine eingereicht werden und anschließend von einer freien Autorin / Autor bearbeitet werden. Damit weiß die Autorin / der Autor sofort, mit welcher Vergütung sie / er mindestens rechnen kann."
-  },
-  {
-    "name": "Citadel",
-    "twitter": "runcitadel",
-    "donationURL": "https://donate.runcitadel.space/",
-    "avatar": "/img/donation/citadel.jpg",
-    "description": "Citadel ist eine größtenteils quelloffene Bitcoin-Node-Implementierung, die ursprünglich auf Umbrel basierte. Gegründet wurde das Projekt von Aaron Dewes, der ein ehemaliger freier Mitarbeiter von Umbrel ist. Das Projekt ist nicht kommerziell und wird ausschließlich durch donation finanziert."
+    "name": "JoinMarket",
+    "github": "JoinMarket-Org/joinmarket-clientserver",
+    "twitter": "joinmarket",
+    "donationURL": "https://bitcoinprivacy.me/joinmarket-donations",
+    "avatar": "/img/donation/joinmarket.jpg",
+    "description": "Software per creare un tipo speciale di transazione Bitcoin chiamata CoinJoin. Il suo scopo è migliorare la riservatezza e la privacy delle transazioni bitcoin."
   },
   {
     "name": "Mempool.space",
@@ -34,37 +13,13 @@
     "twitter": "mempool",
     "donationURL": "https://mempool.space/de/sponsor",
     "avatar": "/img/donation/mempool.jpg",
-    "description": "Freie Open-Source Lösung für einen Bitcoin Blockexplorer. Die Software stellt ein modernes Interface zur Verfügung, welches auch auf der eigenen Bitcoin Full-Node installiert werden und betrieben werden kann."
+    "description": "Mempool e blockchain explorer di Bitcoin totalmente open-source. Il software fornisce un'interfaccia moderna che può essere installata anche sul proprio fullnode Bitcoin."
   },
   {
-    "name": "Naka Toshi",
-    "twitter": "NakaToshiVision",
-    "donationURL": "https://www.nakatoshi.vision/",
-    "avatar": "/img/donation/nakatoshi.jpg",
-    "description": "Diese wurde gestartet, um die Schulen in El Salvador zu unterstützen. Jedem Kind soll im Unterricht durch ausgebildete Lehrkräfte Bitcoin erklärt werden, damit ein fundamentales Basiswissen über das Geldsystem bekommt. Durch die Anschaffung von technischen Geräten wollen wir auch den Kindern ein praktisches Anwenden ihres erworbenen Wissens ermöglichen."
-  },
-  {
-    "name": "RaspiBlitz",
-    "github": "RaspiBlitz",
-    "twitter": "RaspiBlitz",
-    "donationURL": "https://tallyco.in/s/r5lx23/",
-    "avatar": "/img/donation/raspiblitz.jpg",
-    "description": "Open-Source Lösung einer Bitcoin Full-Node mit integrierter Lightning-Node auf Basis des Raspberry-Pi's. Wird überwiegend von deutschen Entwicklern weiterentwickelt und ist komplett als freie Software erhältlich, womit auch eine kommerzielle Nutzung möglich wird. In diesem Fall unterscheidet sich das RaspiBlitz Projekt von anderen Full-Node Projekten am Markt."
-  },
-  {
-    "name": "Rene Pickhardt",
-    "github": "renepickhardt",
-    "twitter": "renepickhardt",
-    "donationURL": "https://donate.ln.rene-pickhardt.de/",
-    "avatar": "https://avatars.githubusercontent.com/u/1926816?s=460",
-    "description": "Deutscher Entwickler, dem der freie Zugriff auf Bildungsinhalte sehr wichtig ist und sich primär mit der Forschung und Entwicklung rund um das Lightning-Netzwerk beschäftigt. Aktuell wichtigstes Projekt ist ein neuer Ansatz für einen Routing-Algorithmus im Lightning-Netzwerk. Dieser Ansatz wird unter dem Namen Pickhardt-Payments geführt."
-  },
-  {
-    "name": "Specter",
-    "github": "cryptoadvance/specter-desktop",
-    "twitter": "SpecterWallet",
-    "donationURL": "https://donate.specter.solutions/apps/3k77BAT6zshCGNd3i7gw9WKwXQy1/pos",
-    "avatar": "/img/donation/specter.png",
-    "description": "Specter ist eine Desktop-Wallet, die verschiedenste Hardware-Wallets unterstützt und viele Möglichkeiten im Bereich MultiSig mitbringt."
-  }  
+    "name": "Hack.bs",
+    "twitter": "h4ckbs",
+    "donationURL": "https://hack.bs.it/it/donate/",
+    "avatar": "/img/donation/hackbs.jpg",
+    "description": "Hackerspace cypherpunk non-profit situato a Brescia. Lo scopo è di offrire uno spazio dove sviluppatori, hacker, studenti e tecno-curiosi possano incontrarsi e imparare gli uni dagli altri, scrivendo software open source, sviluppando su Bitcoin, parlando di privacy e libertá."
+  }
 ]
