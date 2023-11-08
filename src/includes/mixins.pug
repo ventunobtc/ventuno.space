@@ -5,11 +5,11 @@ mixin sprite(id)
 mixin categories(current)
   ul.categories
     li: a(href="/podcast/" class=(!current && 'current')) Tutti
-    li: a(href="/podcast/news/" class=(current === 'News' && 'current')) News
+    li: a(href="/podcast/agorà/" class=(current === 'News' && 'current')) Agorà
     li: a(href="/podcast/interviste/" class=(current === 'Interviews' && 'current')) Interviste
     li: a(href="/podcast/letteratura/" class=(current === 'Literature' && 'current')) Letteratura
-    li: a(href="/podcast/der-weg/" class=(current === 'Der Weg' && 'current')) Percorso
-    li: a(href="/podcast/varie/" class=(current === 'Verschiedenes' && 'current')) Varie
+    li: a(href="/podcast/economia/" class=(current === 'Der Weg' && 'current')) Economia
+    li: a(href="/podcast/tour/" class=(current === 'On Tour' && 'current')) Tour
 //-vanno modificate anche in "generate_page.js" e "fetch_feed.js"
 
 mixin member(m)
