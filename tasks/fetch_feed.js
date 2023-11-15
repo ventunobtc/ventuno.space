@@ -103,11 +103,11 @@ const parseEpisode = e => {
   const _noParticipants = [],
     _noNode = []
   const members = [
-    { name: 'Dennis', ...team.dennis.v4v },   //da modificare
+    /*{ name: 'Dennis', ...team.dennis.v4v },   //da modificare
     { name: 'Fab', ...team.fab.v4v },         //da modificare
     { name: 'Gigi', ...team.gigi.v4v },       //da modificare
     { name: 'Markus', ...team.markus.v4v },   //da modificare
-    { name: 'Daniel', ...team.daniel.v4v }    //da modificare
+    { name: 'Daniel', ...team.daniel.v4v }    //da modificare*/
   ]
 
   // remove invalid tag
