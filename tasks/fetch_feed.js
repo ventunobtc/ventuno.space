@@ -224,13 +224,13 @@ const parseEpisode = e => {
   } else {
     console.error(validation.err)
   }
-
-  if (_noParticipants.length) {
-    console.log('Keine Teilnehmerliste')
+  
+  /*if (_noParticipants.length) {
+    console.log('No participant list')
     console.table(_noParticipants)
   }
   if (_noNode.length) {
-    console.log('Teilnehmer ohne Node')
+    console.log('Participants without node')
     console.table(_noNode)
-  }
+  }*/
 })()
