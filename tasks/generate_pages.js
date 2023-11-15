@@ -48,7 +48,6 @@ renderPage('donations', 'donazioni', { navCurrent: 'donazioni', donationregister
 //-renderPage('shops', 'shop', { navCurrent: 'shops', shops })
 
 renderPage('media', 'media', { navCurrent: 'media' })
-renderPage('social', 'social', { navCurrent: 'social' })
 renderPage('team', 'team', { navCurrent: 'team', team })
 //renderPage('soundboard', 'soundboard', { navCurrent: 'soundboard', soundboard })
 //renderPage('telegram', 'telegram', { navCurrent: 'telegram', telegram: site.telegram })
