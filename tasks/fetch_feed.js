@@ -103,11 +103,11 @@ const parseEpisode = e => {
   const _noParticipants = [],
     _noNode = []
   const members = [
-    { name: 'Dennis', ...team.dennis.v4v },
-    { name: 'Fab', ...team.fab.v4v },
-    { name: 'Gigi', ...team.gigi.v4v },
-    { name: 'Markus', ...team.markus.v4v },
-    { name: 'Daniel', ...team.daniel.v4v }
+    { name: 'Dennis', ...team.dennis.v4v },   //da modificare
+    { name: 'Fab', ...team.fab.v4v },         //da modificare
+    { name: 'Gigi', ...team.gigi.v4v },       //da modificare
+    { name: 'Markus', ...team.markus.v4v },   //da modificare
+    { name: 'Daniel', ...team.daniel.v4v }    //da modificare
   ]
 
   // remove invalid tag
@@ -133,7 +133,7 @@ const parseEpisode = e => {
     const episode = parseEpisode(item)
     episodes.push(episode)
 
-    const link = `https://einundzwanzig.space/podcast/${episode.slug}`
+    const link = `https://einundzwanzig.space/podcast/${episode.slug}`    //da modificare
     let description = episode.description
     if (index > 20) {
       description = `Shownotes: ${link}`

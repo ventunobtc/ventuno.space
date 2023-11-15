@@ -1,8 +1,8 @@
-# Einundzwanzig Podcast Website
+# Il sito di Ventuno Podcast
 
-Die offizielle [Einundzwanzig](https://einundzwanzig.space) website.
+Il sito ufficiale di [Ventuno](https://ventuno.space).
 
-![Build](https://github.com/Einundzwanzig-Podcast/einundzwanzig.space/workflows/build/badge.svg)
+![Build](https://github.com/ventunobtc/ventuno.space/workflows/build/badge.svg)
 
 ## Content
 

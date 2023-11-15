@@ -1,31 +1,10 @@
 [
   {
-    "name": "VHS-Kurs Bitcoin für Einsteiger Webinar",
-    "url": "https://webinare-vhs.de/webinare/webinare-beruf-und-karriere.html/kurs/483-C-P85035010/t/bitcoin-fuer-einsteiger",
-    "country": "DE"
-  },
-  {
-    "name": "VHS-Kurs Bitcoin für Einsteiger in Böblingen",
-    "url": "https://www.vhs-aktuell.de/programm/beruf-und-karriere.html?action%5B91%5D=course&courseId=483-C-P55234010&rowIndex=0",
-    "top": 71,
-    "left": 28,
-    "country": "DE",
-    "state": ["Baden-Württemberg"]
-  },
-  {
-    "name": "VHS-Kurs am Bodensee",
-    "url": "https://vhs-bodenseekreis.de/Veranstaltung/cmx62985260f00f8.html",
-    "top": 77,
-    "left": 35,
-    "country": "DE",
-    "state": ["Baden-Württemberg"]
-  },
-  {
     "name": "Workshop | Bitcoin - Kl79",
     "url": "https://www.kl79.de/",
     "top": 50,
-    "left": 20,
-    "country": "DE",
-    "state": ["Hessen"]
+    "left": 10,
+    "country": "IT",
+    "state": ["Lazio"]
   }
 ]
