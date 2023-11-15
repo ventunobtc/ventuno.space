@@ -121,7 +121,7 @@
           z-index: 0;
           top: calc(var(--space-m) * -1);
           left: calc(var(--space-l) * -1);
-          right: calc(var(--space-l) * -1);
+          right: calc(var(--space-l) * -1.5);
           opacity: 0;
           padding: 1.25em var(--space-l) var(--space-m);
           background: var(--color-flyout-bg);

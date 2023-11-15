@@ -1,0 +1,39 @@
+extends /template.pug
+
+block vars
+  - const title = 'Biblioteca'
+  - const description = 'La nostra biblioteca è costitutita da Biblioteca Libertaria, Biblioteca Bitcoin e i libri tradotti dalla community.'
+
+block main
+  #library.wrap
+    section
+      h1= title
+      p= description
+
+      :markdown-it(html linkify typographer)
+        Siamo orgogliosi di questo cyberspazio che permette un facile accesso alla letteratura bitcoiner.
+        Crediamo che il sapere debba essere accessibile da chiunque lo desideri, senza alcun limite.
+      
+      ul
+        li
+          a(href="https://t.me/librilibertari" rel="nofollow noopener" target="_blank")= "Biblioteca Libertaria"
+        li
+          a(href="https://bibliotecabitcoin.org/" rel="nofollow noopener" target="_blank")= "Biblioteca Bitcoin"
+
+      h2= "Libri"
+      :markdown-it(html linkify typographer)
+        È possibile contribuire alla realizzazione e traduzione di nuovi libri unendosi al nostro [gruppo Telegram](https://t.me/ventunobtc) o proponendo tramite [issue](https://github.com/ventunobtc/traduzione-libri/issues) nella repo GitHub di riferimento.
+        <!--Ecco un [video tutorial]() su come creare una nuova richiesta di pull.-->
+
+      ul
+        each book in books
+          li
+            a(href=book.url rel="nofollow noopener" target="_blank")= book.name
+            = " di "
+            = book.authors
+
+            if book.translators 
+              = " - tradotto da "
+              = book.translators
+            else
+              = " - in fase di traduzione"

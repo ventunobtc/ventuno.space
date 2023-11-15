@@ -12,6 +12,7 @@ block vars
 html(lang="it")
   head
     include _head
+    //-include _adventcalendar
   body
     header.header#header
       .wrap
@@ -25,24 +26,24 @@ html(lang="it")
               a(href="#" onclick="return false;") Community
               .more
                 a(href="/meetup/" class=(navCurrent === 'meetups' && 'current')) Meetup
-                a(href="/eventi/" rel="nofollow noopener") Eventi
-                a(href="/corsi/" rel="nofollow noopener") Corsi
+                a(href="/eventi/" class=(navCurrent === 'events' && 'current')) Eventi
+                //-a(href="/corsi/" rel="nofollow noopener") Corsi
                 a(href="/guide/" rel="nofollow noopener") Guide
-                a(href="/libri/" rel="nofollow noopener") Libri
-                a(href="/donazioni/" class=(navCurrent === 'donazioni' && 'current')) Donazioni
-                a(href="/shop/" class=(navCurrent === 'shops' && 'current')) Shop
-                a(href=site.meta.shoutoutUrl target="_blank" rel="nofollow noopener") Shout-Out
+                a(href="/biblioteca/" rel="nofollow noopener") Biblioteca
+                a(href="/youtube/" class=(navCurrent === 'youtube' && 'current')) Youtube
+                //-a(href="/shop/" class=(navCurrent === 'shops' && 'current')) Shop
+                //-a(href=site.meta.shoutoutUrl target="_blank" rel="nofollow noopener") Shout-Out
             .navItem
-              a(href="#" onclick="return false;") Info
+              a(href="#" onclick="return false;") Info&emsp;&emsp;&emsp;&emsp;
               .more
+                a(href="/donazioni/" class=(navCurrent === 'donazioni' && 'current')) Donazioni
                 a(href="/media/" class=(navCurrent === 'media' && 'current')) Media
-                a(href="/social/" class=(navCurrent === 'social' && 'current')) Social
                 //- a(href=site.meta.youtubeUrl target="_blank" rel="nofollow noopener") YouTube
                 a(href="/team/" class=(navCurrent === 'team' && 'current')) Team
-                a(href="/telegram/" class=(navCurrent === 'telegram' && 'current')) Telegram
+                //-a(href="/telegram/" class=(navCurrent === 'telegram' && 'current')) Telegram
                 //- a(href="/soundboard/" class=(navCurrent === 'soundboard' && 'current')) Suoni
                 //- a(href="/verein/" class=(navCurrent === 'verein' && 'current')) Verein
-                a(href="/contact/" class=(navCurrent === 'contact' && 'current')) Contatti
+                //- a(href="/contact/" class=(navCurrent === 'contact' && 'current')) Contatti
           button(type="button").theme
             +sprite("theme")
 

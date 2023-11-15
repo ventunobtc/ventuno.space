@@ -9,10 +9,10 @@ block main
     section
       h1= title
 
-      h2 Panoramica
-      p= description
+      //-h2 Panoramica
+      //-p= description
 
-      ul.donations
+      //-ul.donations
         each s in donationoverview
           +donation(s)
 
@@ -20,8 +20,8 @@ block main
       p Consideriamo questi progetti, iniziative e sviluppatori degni di essere sostenuti.
 
       :markdown-it(html linkify typographer)
-        È gradita l'aggiunta di nuove proposte tramite [Pull Request](https://github.com/Einundzwanzig-Podcast/einundzwanzig.space/edit/master/content/donationregister.json).
-        Ecco un [video tutorial](https://www.youtube.com/watch?v=BNJc9LExEzU) su come creare una nuova richiesta di pull.
+        È gradita l'aggiunta di nuove proposte tramite [Pull Request](https://github.com/VentunoBTC/ventuno.space/edit/master/content/donationregister.json).
+        <!--Ecco un [video tutorial]() su come creare una nuova richiesta di pull.-->
 
       ul.donations(data-shuffle)
         each s in shuffle(donationregister)

@@ -45,8 +45,8 @@ const parseEpisode = e => {
   let [, categoryName = 'News', number, titlePlain] = title.match(
     /([\w\s]+?)?\s?#(\d+) - (.*)/
   ) || [, , , title]
-  if (!number) categoryName = 'Verschiedenes'
   if (categoryName === 'Der-Weg') categoryName = 'Der Weg'
+  if (categoryName === 'On-Tour') categoryName = 'On Tour'
   if (categoryName === 'Buchclub') categoryName = 'Literature'
   const firstLine = description.split('\n')[0]
   const blockMatch = firstLine.match(/Blockzeit\s(\d+)/)
@@ -55,7 +55,7 @@ const parseEpisode = e => {
   const slug = slugify(`${categoryName} ${number || ''} ${titlePlain}`)
   const date = new Date(e.pubDate)
   const img = e['itunes:image'].__attr.href
-  const image = ['interview', 'literature', 'verschiedenes'].includes(category)
+  const image = ['interview', 'on-tour'].includes(category)
     ? img
     : `/img/cover/${category}.png`
   const duration = e['itunes:duration']
@@ -103,11 +103,11 @@ const parseEpisode = e => {
   const _noParticipants = [],
     _noNode = []
   const members = [
-    { name: 'Dennis', ...team.dennis.v4v },   //da modificare
+    /*{ name: 'Dennis', ...team.dennis.v4v },   //da modificare
     { name: 'Fab', ...team.fab.v4v },         //da modificare
     { name: 'Gigi', ...team.gigi.v4v },       //da modificare
     { name: 'Markus', ...team.markus.v4v },   //da modificare
-    { name: 'Daniel', ...team.daniel.v4v }    //da modificare
+    { name: 'Daniel', ...team.daniel.v4v }    //da modificare*/
   ]
 
   // remove invalid tag

@@ -1,0 +1,17 @@
+extends /template.pug
+
+block vars
+  - const title = 'YouTube'
+
+block main
+  #youtube.wrap
+    section
+      h1= title
+      
+      :markdown-it(html linkify typographer)
+        Il [nostro canale]() è una raccolta di traduzioni di video, interventi e documentari del mondo Bitcoin.
+
+        È possibile contribuire alla realizzazione delle traduzioni tramite [Pull Request](https://github.com/ventunobtc/video-youtube/pulls).
+        Proponiamo anche, insieme alle nostre [guide](/guide), lezioni pratiche per rendere più accessibili i nostri contenuti. 
+
+          

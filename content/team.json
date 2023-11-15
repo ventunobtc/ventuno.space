@@ -1,27 +1,44 @@
 {
-  "gigi": {
-    "name": "Gigi",
-    "twitter": "dergigi",
-    "nostr": "npub1dergggklka99wwrs92yz8wdjs952h2ux2ha2ed598ngwu9w7a6fsh9xzpc",
-    "github": "dergigi",
-    "url": "https://dergigi.com",
-    "text": "Der Gigi leiht dir seine Taschenlampe 🔦 solltest du dich auf deinem Weg im [Kaninchenbau](https://21lessons.com/) mal verlaufen 🕳🐇",
-    "image": "/img/team/gigi.jpg",
-    "v4v": {
-      "address": "02e12fea95f576a680ec1938b7ed98ef0855eadeced493566877d404e404bfbf52"
-    }
+  "john": {
+    "name": "John Galt",
+    "twitter": "",
+    "nostr": "npub1wxxlkmdsghz2czr9fd7y2tnhfdxv5a557tra6juvlasx6kf7xxrqxhl7f7",
+    "github": "JohnFrancisGalt",
+    "url": "",
+    "text": "Romans 8:31 ✝ open source everythings 🌐",
+    "image": "/img/team/johngalt.jpg"
   },
-  "dennis": {
-    "name": "Dennis",
-    "nostr": "npub14j7wc366rf8efqvnnm8m68pazy04kkj8fgu6uqumh3eqlhfst0kqrngtpf",
-    "github": "dennisreimann",
-    "url": "https://d11n.net",
-    "text": "Mag Open Source und [BTCPay Server](https://btcpayserver.org/) 💚 und schreibt lieber Software als Texte über sich selbst 👨🏻‍💻",
-    "image": "/img/team/dennis.jpg",
-    "v4v": {
-      "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
-      "customKey": "696969",
-      "customValue": "1M1LbWGzwPE2qViFPG34"
-    }
+  "giuliano": {
+    "name": "Giuliano",
+    "twitter": "",
+    "nostr": "",
+    "github": "giulianoassaggio",
+    "url": "",
+    "text": "Ora, Labora, Lifta | OpenPGP: 591FDB8BF7A0D9D259F2A611FF93F\n8F5C0AFE4D7",
+    "image": "/img/team/giuliano.jpg"
+  },
+  "parsevalbtc": {
+    "name": "Parseval",
+    "twitter": "parsevalbtc",
+    "github": "parsevalbtc",
+    "text": "Ricercatore e professore di Criptoeconomia 👨‍🏫 Nel tempo libero revisore accademico 📜",
+    "image": "/img/team/parsevalbtc.jpg"
+  },
+  "loop": {
+    "name": "Loop",
+    "twitter": "loop_btc",
+    "nostr": "npub1p6ck6s4f5qdun4jx3hd6q3ppnmkhqvl9syz8s9nx7nqnmvn9cjvqvvhk3dnpub1p6ck6s4f5qdun4jx3hd6q3ppnmkhqvl9syz8s9nx7nqnmvn9cjvqvvhk3d",
+    "github": "loop_btc",
+    "url": "https://loop-btc.github.io/",
+    "text": "Fixing the world, one orange pill at a time 🍊💊",
+    "image": "/img/team/loop.png"
+  },
+  "21million": {
+    "name": "21Million",
+    "twitter": "21MillionClub_",
+    "nostr": "npub1tuacdsa487rewrns08dxeh94a37qrjnvd4y5qgn24lwhyvkpqt4q8t7rgf",
+    "github": "21MillionClub",
+    "text": "Mi sono avvicinato al mondo Bitcoin nel 2017 ed è cambiato tutto. Con lo studio ho appreso il vero impatto che questa tecnologia porta con sé, soprattutto a livello sociale.",
+    "image": "/img/team/21million.jpeg"
   }
 }

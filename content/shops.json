@@ -1,30 +1,26 @@
 [
   {
-    "name": "Unser offizieller Shop mit dem Einundzwanzig Magazin",
-    "url": "https://einundzwanzig.shop/"
+    "name": "Libri",
+    "url": ""
   },
   {
-    "name": "Copiaro (Einundzwanzig Merch, Little HODLer, Bitcoin Hardware)",
-    "url": "https://copiaro.de/einundzwanzig"
+    "name": "Magazine",
+    "url": ""
+  },
+  {
+    "name": "Magliette",
+    "url": ""
   },
   {
     "name": "Whitepapers",
-    "url": "http://whitepapershop.net/"
+    "url": ""
   },
   {
-    "name": "Dezentralshop (T-Shirts, Sticker, Bücher (🇨🇭Schweiz)",
-    "url": "https://dezentralshop.ch/"
+    "name": "Hardware",
+    "url": ""
   },
   {
-    "name": "SatoshistoreIO (T-Shirts, Babybodies, Hoodies, Sticker, Bücher uvm.)",
-    "url": "https://satoshistore.io/"
-  },
-    {
-    "name": "Frankenstein Shop (Sticker, Caps, Hardware Wallets)",
-    "url": "https://btcfrankenstein.com/"
-  },
-  {
-  "name": "Stuff4BTC (Sticker, Pins, Merch)",
-  "url": "https://stuff4btc.de/"
-}
+  "name": "Gadget",
+  "url": ""
+  }
 ]

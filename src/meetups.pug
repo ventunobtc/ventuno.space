@@ -2,16 +2,15 @@ extends /template.pug
 
 block vars
   - const title = 'Bitcoin Meetup'
-  - const description = 'Elenco di meetup Bitcoin e Ventuno in Italia'
-  - const cardImage = '/img/card/meetups.png'
+  - const description = 'Elenco dei Satoshi Spritz in Italia'
+  - const cardImage = '/img/card/satoshispritz.png'
 
 append head
   script(src=assetPath("/vendor/jvectormap/jquery.min.js"))
   script(src=assetPath("/vendor/jvectormap/jquery-jvectormap.js"))
   script(src=assetPath("/vendor/jvectormap/maps/europe_mill.js"))
-  script(src=assetPath("/vendor/jvectormap/maps/de_mill.js"))
-  script(src=assetPath("/vendor/jvectormap/maps/at_mill.js"))
   script(src=assetPath("/vendor/jvectormap/maps/ch_mill.js"))
+  script(src=assetPath("/vendor/jvectormap/maps/it_mill.js"))
   link(href=assetPath("/vendor/jvectormap/jquery-jvectormap.css") rel="stylesheet")
 
 block main
@@ -24,9 +23,11 @@ block main
         I Satoshi Spritz sono una serie di gruppi a cui piace parlare di Bitcoin (e solo di Bitcoin) bevendo uno spritz a cadenze regolari (es. ogni settimana)
         in una città precisa al fine di costituire una comunità di Bitcoiner distribuita in Italia.
         
-        È gradita l'aggiunta di nuovi Meetup [sul sito](https://satoshispritz.it/).
+        È gradita l'aggiunta di nuovi meetup [sul sito](https://satoshispritz.it/).
 
-        Telegram: Il modello per la foto di gruppo si trova nel [Media Kit](/media).
+        <!---Qui potete trovare anche il nostro [modello di presentazione](https://github.com/Einundzwanzig-Podcast/slides), che vi offre un punto di partenza per le vostre presentazioni.
+        Telegram: Il modello per la foto di gruppo si trova nel [Media Kit](/media).<br>-->
+        
         Suggerimento: potete tenere lontani gli spammer con bot come [Shieldy](https://t.me/shieldy_bot).
 
   div(style="margin-bottom: calc(var(--space-xxl) * -1)")
