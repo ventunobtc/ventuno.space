@@ -1,4 +1,4 @@
-const pug = require('pug')
+/*const pug = require('pug')
 const { mkdirSync, writeFileSync } = require('fs')
 const { dirname, resolve } = require('path')
 const { NDKUser } = require('@nostr-dev-kit/ndk')
@@ -27,4 +27,4 @@ const dir = dirname(dst)
 const res = { names, relays }
 
 mkdirSync(dir, { recursive: true })
-writeFileSync(dst, JSON.stringify(res, null, 2))
+writeFileSync(dst, JSON.stringify(res, null, 2))*/
