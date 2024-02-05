@@ -18,7 +18,7 @@ if [[ ! -z "$checksum" ]]; then
   if [[ "$checksum" != "$prev" ]]; then
     if [[ ! -z "$GH_PAT" ]]; then
       echo "-> Triggering new build"
-      curl -X POST https://api.github.com/repos/Einundzwanzig-Podcast/einundzwanzig.space/dispatches \
+      curl -X POST https://api.github.com/repos/ventunobtc/ventuno.space/dispatches \
         -H "Authorization: token $GH_PAT" \
         -H "Accept: application/vnd.github.everest-preview+json" \
         -H "Content-Type: application/json" \

@@ -1,8 +1,8 @@
 {
   "private": true,
   "version": "0.1.0",
-  "name": "einundzwanzig.space",
-  "description": "Einundzwanzig Podcast Website",
+  "name": "ventuno.space",
+  "description": "Ventuno Podcast Website",
   "repository": "git@github.com:Einundzwanzig-Podcast/einundzwanzig.space.git",
   "license": "MIT",
   "engines": {
@@ -11,7 +11,7 @@
   "config": {
     "dist": "dist",
     "port": "3000",
-    "domain": "einundzwanzig.space"
+    "domain": "ventuno.space"
   },
   "scripts": {
     "clean": "rm -rf dist generated && mkdir -p dist generated",

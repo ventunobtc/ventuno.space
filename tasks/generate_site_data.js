@@ -81,7 +81,7 @@ writeJSON(dir('generated', 'site-data.json'), {
 // Soundboard
 const sounds = soundboard.map(group => {
   group.sounds = group.sounds.map(sound => {
-    sound.url = `https://einundzwanzig.space${sound.file}`
+    sound.url = `https://ventuno.space${sound.file}`
     delete sound.file
     return sound
   })

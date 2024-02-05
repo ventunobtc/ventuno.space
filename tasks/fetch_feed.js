@@ -133,7 +133,7 @@ const parseEpisode = e => {
     const episode = parseEpisode(item)
     episodes.push(episode)
 
-    const link = `https://einundzwanzig.space/podcast/${episode.slug}`    //da modificare
+    const link = `https://ventuno.space/podcast/${episode.slug}`
     let description = episode.description
     if (index > 20) {
       description = `Shownotes: ${link}`
