@@ -42,6 +42,7 @@ const parseEpisode = e => {
   const title = e.title.__cdata.trim().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
   const content = replacements(e.description.__cdata).trim()
   const description = stripHTML(content)
+  const categoryNameAccent = "Agorà"
 
   // CategoryName, number and titlePlain
   let [, categoryName = ' ', number, titlePlain] = title.match(
@@ -81,6 +82,7 @@ const parseEpisode = e => {
     block,
     category,
     categoryName,
+    categoryNameAccent,
     number,
     title,
     titlePlain,
