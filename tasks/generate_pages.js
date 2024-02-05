@@ -36,8 +36,8 @@ const eventsSorted = site.events.sort((a, b) => {
   return sortEventId(a) > sortEventId(b) ? 1 : -1
 })
 
-renderPage('index', 'index', { navCurrent: 'index', currentEpisode: episodes[0] })
-renderPage('podcast', 'podcast', { navCurrent: 'podcast', episodes: [...episodes] })
+renderPage('index', 'index', { navCurrent: 'index', currentEpisode: episodes[0], team })
+renderPage('podcast', 'podcast', { navCurrent: 'podcast', episodes: [...episodes], team })
 
 renderPage('meetups', 'meetup', { navCurrent: 'meetups', meetups: meetupsSorted })
 renderPage('events', 'eventi', { navCurrent: 'events', events: eventsSorted })
@@ -64,9 +64,10 @@ renderPage('team', 'team', { navCurrent: 'team', team })
 
 //renderPage('adventcalendar', 'avvento', { adventcalendar })
 
-renderPage('category', 'podcast/agorà', { navCurrent: 'podcast', category: 'news', categoryName: 'News', episodes: episodes.filter(e => e.category === 'news') })
-renderPage('category', 'podcast/interviste', { navCurrent: 'podcast', category: 'interview', categoryName: 'Interviews', episodes: episodes.filter(e => e.category === 'interview') })
-renderPage('category', 'podcast/letteratura', { navCurrent: 'podcast', category: 'literature', categoryName: 'Literature', episodes: episodes.filter(e => e.category === 'literature') })
-renderPage('category', 'podcast/economia', { navCurrent: 'podcast', category: 'der-weg', categoryName: 'Der Weg', episodes: episodes.filter(e => e.category === 'der-weg') })
-renderPage('category', 'podcast/tour', { navCurrent: 'podcast', category: 'on-tour', categoryName: 'On Tour', episodes: episodes.filter(e => e.category === 'on-tour') })
+renderPage('category', 'podcast/agora', { navCurrent: 'podcast', category: 'agora', categoryName: 'Agorà', episodes, team })
+//renderPage('category', 'podcast/interviste', { navCurrent: 'podcast', category: 'interview', categoryName: 'Interviews', episodes, team })
+//renderPage('category', 'podcast/letteratura', { navCurrent: 'podcast', category: 'literature', categoryName: 'Literature', episodes, team })
+//renderPage('category', 'podcast/economia', { navCurrent: 'podcast', category: 'economy', categoryName: 'Economy', episodes, team })
+//renderPage('category', 'podcast/tour', { navCurrent: 'podcast', category: 'tour', categoryName: 'Tour',team })
+
 episodes.forEach(episode => renderPage('episode', `podcast/${episode.slug}`, { navCurrent: 'podcast', episode, team }))
