@@ -61,16 +61,16 @@
       margin: 0 var(--space-l) var(--space-l) 0;
     }
 
-    & .orange {
+    & .literature {
       background: var(--color-accent);
     }
 
-    & .derweg {
-      background: var(--color-derweg);
+    & .economy {
+      background: var(--color-economy);
     }
 
-    & .interview {
-      background: var(--color-interview);
+    & .interviews {
+      background: var(--color-interviews);
     }
   }
 
