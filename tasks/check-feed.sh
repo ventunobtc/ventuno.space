@@ -4,7 +4,7 @@ dir=$(dirname "$0")
 log="$dir/check-feed.log"
 file="$dir/.check-feed"
 prev=$(cat $file)
-feed=$(curl -s https://anchor.fm/s/d8d3c38/podcast/rss)
+feed=$(curl -s https://anchor.fm/s/ebe58594/podcast/rss)
 dates=$(echo "$feed" | awk 'BEGIN { FS="<|>"; RS="\n" }; { if ($0 ~ /pubDate/) print $3}')
 count=$(echo "$dates" | wc -l | xargs)
 date=$(echo "$dates" | head -n 1)
