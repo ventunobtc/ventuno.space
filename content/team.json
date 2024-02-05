@@ -10,10 +10,7 @@
   },
   "giuliano": {
     "name": "Giuliano",
-    "twitter": "",
-    "nostr": "",
     "github": "giulianoassaggio",
-    "url": "",
     "text": "Ora, Labora, Lifta | OpenPGP: 591FDB8BF7A0D9D259F2A611FF93F\n8F5C0AFE4D7",
     "image": "/img/team/giuliano.jpg"
   },
@@ -40,5 +37,12 @@
     "github": "21MillionClub",
     "text": "Mi sono avvicinato al mondo Bitcoin nel 2017 ed è cambiato tutto. Con lo studio ho appreso il vero impatto che questa tecnologia porta con sé, soprattutto a livello sociale.",
     "image": "/img/team/21million.jpeg"
+  },
+  "valerio": {
+    "name": "Valerio",
+    "twitter": "@tulipan81",
+    "github": "valerio-vaccaro",
+    "text": "Ingegnere, Bitcoiner, Data Scientist, IoT Expert e Tech Enthusiast.",
+    "image": "/img/team/valerio.png"
   }
 }
