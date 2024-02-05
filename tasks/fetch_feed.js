@@ -39,35 +39,44 @@ const builder = new XMLBuilder(json2xmlOpts)
 
 const parseEpisode = e => {
   const guid = e.guid['#text']
-  const title = e.title.__cdata.trim()
+  const title = e.title.__cdata.trim().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
   const content = replacements(e.description.__cdata).trim()
   const description = stripHTML(content)
-  let [, categoryName = 'News', number, titlePlain] = title.match(
+
+  // CategoryName, number and titlePlain
+  let [, categoryName = ' ', number, titlePlain] = title.match(
     /([\w\s]+?)?\s?#(\d+) - (.*)/
   ) || [, , , title]
-  if (categoryName === 'Der-Weg') categoryName = 'Der Weg'
-  if (categoryName === 'On-Tour') categoryName = 'On Tour'
-  if (categoryName === 'Buchclub') categoryName = 'Literature'
+  if (categoryName === 'Economia') categoryName = 'Economy'
+  if (categoryName === 'Intervista') categoryName = 'Interview'
+  if (categoryName === 'Letteratura') categoryName = 'Literature'
+
+  // Block
   const firstLine = description.split('\n')[0]
-  const blockMatch = firstLine.match(/Blockzeit\s(\d+)/)
+  const blockMatch = firstLine.match(/Blocco\s(\d+)/)
   const block = blockMatch ? parseInt(blockMatch[1]) : null
+
+  // Other
   const category = slugify(categoryName)
   const slug = slugify(`${categoryName} ${number || ''} ${titlePlain}`)
   const date = new Date(e.pubDate)
   const img = e['itunes:image'].__attr.href
-  const image = ['interview', 'on-tour'].includes(category)
+  const image = ['interview', 'tour'].includes(category)
     ? img
     : `/img/cover/${category}.png`
   const duration = e['itunes:duration']
   const enclosure = e.enclosure.__attr
+  
+  // Participants
   const [, participantsString] =
-    firstLine.match(/\s-\s(?:(?:von\sund\s)?mit\s)([^.]*)/i) || []
+    firstLine.match(/\s-\s(?:(?:con\s))([^.]*)/i) || []
   const participants = participantsString
     ? participantsString
-        .replace(/(\s*,\s*|\s*und\s*|\s*&amp;\s*)/gi, '%')
+        .replace(/(,\s*|\se\s)/gi, '%')
         .trim()
         .split('%')
     : []
+
   return {
     block,
     category,
