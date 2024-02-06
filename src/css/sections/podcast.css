@@ -181,7 +181,7 @@
   --player-button-margin: var(--space-l);
 
   display: flex;
-  border-radius: var(--border-radius);
+  border-radius: var(--space-s);
   background-color: var(--color-card-bg);
   overflow: hidden;
 

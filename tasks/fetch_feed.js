@@ -142,15 +142,16 @@ const parseEpisode = e => {
     episodes.push(episode)
 
     const link = `https://ventuno.space/podcast/${episode.slug}`
-    let description = episode.description
+    let { description, content } = episode
     if (index > 20) {
       description = `Shownotes: ${link}`
+      content = `Shownotes: ${link}`
     }
 
     const updated = {
       ...item,
       link, // replace Anchor link
-      description,
+      content: { __cdata: content },
       //'itunes:summary': description // please the validator, Anchor's itunes:summary contains HTML
     }
 
