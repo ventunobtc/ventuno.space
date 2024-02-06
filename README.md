@@ -1,4 +1,4 @@
-# Il sito di Ventuno Podcast
+# Il sito di Ventuno
 
 Il sito ufficiale di [Ventuno](https://ventuno.space).
 

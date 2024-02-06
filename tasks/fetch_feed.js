@@ -102,6 +102,9 @@ const parseEpisode = e => {
   // Load and adapt feed
   const anchorXML = request('GET', masterFeedUrl).getBody('utf8')
   const xml = anchorXML
+    .replace(/\u2060/g, '')
+    .replace(/\u00A0/g, ' ')
+    .replace(/\u2019/g, "'")
     .replace(`"${masterFeedUrl}"`, `"${publicFeedUrl}"`)
     .replace(
       'xmlns:anchor="https://anchor.fm/xmlns"',
@@ -113,13 +116,7 @@ const parseEpisode = e => {
   const episodes = []
   const _noParticipants = [],
     _noNode = []
-  const members = [
-    /*{ name: 'Dennis', ...team.dennis.v4v },   //da modificare
-    { name: 'Fab', ...team.fab.v4v },         //da modificare
-    { name: 'Gigi', ...team.gigi.v4v },       //da modificare
-    { name: 'Markus', ...team.markus.v4v },   //da modificare
-    { name: 'Daniel', ...team.daniel.v4v }    //da modificare*/
-  ]
+  const members = [team.giuliano, team.john, team.valerio]
 
   // remove invalid tag
   delete feed.rss.channel.author
@@ -132,7 +129,7 @@ const parseEpisode = e => {
     },
     'podcast:valueRecipient': members.map(p => ({
       __attr: {
-        ...p,
+        name: p.name,
         type: 'node',
         split: Math.round(100 / members.length)
       }
@@ -154,8 +151,10 @@ const parseEpisode = e => {
       ...item,
       link, // replace Anchor link
       description,
-      'itunes:summary': description // please the validator, Anchor's itunes:summary contains HTML
+      //'itunes:summary': description // please the validator, Anchor's itunes:summary contains HTML
     }
+
+    delete updated['itunes:summary']
 
     if (episode.number) {
       updated['podcast:episode'] = {
