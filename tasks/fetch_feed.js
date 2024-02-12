@@ -120,6 +120,7 @@ const parseEpisode = e => {
 
   // remove invalid tag
   delete feed.rss.channel.author
+  delete feed.rss.channel['itunes:block']
 
   // podcast
   feed.rss.channel['podcast:value'] = {
