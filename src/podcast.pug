@@ -12,17 +12,17 @@ block main
       p= description
       +categories()
 
-      //-p
-        | Ci trovate su tutte le piattaforme podcast più diffuse:
+      p
+        | Ci trovate sulle piattaforme podcast:
         = " "
         a(href=site.meta.spotifyUrl) Spotify
         = ", "
-        a(href=site.meta.appleUrl) Apple
-        = ", "
-        a(href=site.meta.googleUrl) Google
-        = ", "
-        a(href=site.meta.overcastUrl) Overcast
-        = ", "
+        //-a(href=site.meta.appleUrl) Apple
+        //-= ", "
+        //-a(href=site.meta.googleUrl) Google
+        //-= ", "
+        //-a(href=site.meta.overcastUrl) Overcast
+        //-= ", "
         a(href=site.meta.anchorUrl) Anchor
         = " e "
         a(href=site.meta.podcastIndexUrl) Podcast Index

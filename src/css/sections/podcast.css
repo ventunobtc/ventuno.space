@@ -14,20 +14,20 @@
       --category-accent-bg : var(--color-accent);
 
       &.agora {
-        --color-accent-bg : var(--color-overlay-bg);
+        --category-accent-bg : var(--color-overlay-bg);
       }
 
       &.interviews {
-        --color-accent-bg : var(--color-interviews);
+        --category-accent-bg : var(--color-interviews);
       }
 
       &.literature,
       &.tour {
-        --color-accent-bg : var(--color-accent);
+        --category-accent-bg : var(--color-accent);
       }
 
       &.economy {
-        --color-accent-bg : var(--color-economy);
+        --category-accent-bg : var(--color-economy);
       }
 
       display: inline-block;
