@@ -64,10 +64,10 @@ renderPage('team', 'team', { navCurrent: 'team', team })
 
 //renderPage('adventcalendar', 'avvento', { adventcalendar })
 
-renderPage('category', 'podcast/agora', { navCurrent: 'podcast', category: 'agora', categoryName: 'Agorà', episodes, team })
+episodes.forEach(episode => renderPage('episode', `podcast/${episode.slug}`, { navCurrent: 'podcast', episode, team }))
+
+renderPage('category', 'podcast/agora', { navCurrent: 'podcast', category: 'agora', categoryNameText: 'Agorà', episodes: episodes.filter(e => e.category === 'agora'), team })
 //renderPage('category', 'podcast/interviste', { navCurrent: 'podcast', category: 'interview', categoryName: 'Interviews', episodes, team })
 //renderPage('category', 'podcast/letteratura', { navCurrent: 'podcast', category: 'literature', categoryName: 'Literature', episodes, team })
-renderPage('category', 'podcast/economia', { navCurrent: 'podcast', category: 'economy', categoryName: 'Economia', episodes, team })
+renderPage('category', 'podcast/economia', { navCurrent: 'podcast', category: 'economy', categoryNameText: 'Economia', episodes: episodes.filter(e => e.category === 'economy'), team })
 //renderPage('category', 'podcast/tour', { navCurrent: 'podcast', category: 'tour', categoryName: 'Tour',team })
-
-episodes.forEach(episode => renderPage('episode', `podcast/${episode.slug}`, { navCurrent: 'podcast', episode, team }))

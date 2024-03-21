@@ -179,10 +179,7 @@ mixin episodeItem(e)
         img(src=assetPath(e.image) alt=e.title loading="lazy")
       .content
         .meta
-          if e.categoryName === 'Agora'
-            span= e.categoryNameAccent + (e.number ? ` #${e.number}` : '')
-          else  
-            span= e.categoryName + (e.number ? ` #${e.number}` : '')
+          span= e.categoryNameText + (e.number ? ` #${e.number}` : '')
           time(datetime=e.date)= e.block || formatDate(e.date)
         .title=e.titlePlain
         if e.participants.length
@@ -215,10 +212,7 @@ mixin episodePlayer(e)
 
         .player__info
           a.plain(href=`/podcast/${e.slug}/`)
-            if e.categoryName === 'Agora'
-              .player__album(data-amplitude-song-info="album_accent" data-amplitude-main-song-info="true")
-            else
-              .player__album(data-amplitude-song-info="album" data-amplitude-main-song-info="true")
+            .player__album(data-amplitude-song-info="album" data-amplitude-main-song-info="true")
             .player__name(data-amplitude-song-info="name" data-amplitude-main-song-info="true")
 
       if e.participants.length
@@ -235,8 +229,7 @@ mixin episodePlayer(e)
         {
           "name": "#{e.titlePlain}",
           "artist": "Ventuno",
-          "album": "#{e.categoryName + (e.number ? ` #${e.number}` : '')}",
-          "album_accent": "#{e.categoryNameAccent + (e.number ? ` #${e.number}` : '')}",
+          "album": "#{e.categoryNameText + (e.number ? ` #${e.number}` : '')}",
           "url": "#{e.enclosure.url}",
           "cover_art_url": "#{assetPath(e.image)}"
         }

@@ -42,15 +42,11 @@ const parseEpisode = e => {
   const title = e.title.__cdata.trim().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
   const content = replacements(e.description.__cdata).trim()
   const description = stripHTML(content)
-  const categoryNameAccent = "Agorà"
-
+  
   // CategoryName, number and titlePlain
-  let [, categoryName = ' ', number, titlePlain] = title.match(
+  let [, categoryNameText = ' ', number, titlePlain] = title.match(
     /([\w\s]+?)?\s?#(\d+) - (.*)/
   ) || [, , , title]
-  if (categoryName === 'Economia') categoryName = 'Economy'
-  if (categoryName === 'Intervista') categoryName = 'Interview'
-  if (categoryName === 'Letteratura') categoryName = 'Literature'
 
   // Block
   const firstLine = description.split('\n')[0]
@@ -58,15 +54,22 @@ const parseEpisode = e => {
   const block = blockMatch ? parseInt(blockMatch[1]) : null
 
   // Other
-  const category = slugify(categoryName)
-  const slug = slugify(`${categoryName} ${number || ''} ${titlePlain}`)
+  const slug = slugify(`${categoryNameText} ${number || ''} ${titlePlain}`)
   const date = new Date(e.pubDate)
+  const duration = e['itunes:duration']
+  const enclosure = e.enclosure.__attr
+
+  // Image
+  var categoryName = 'Agora'
+  if (categoryNameText === 'Agora') categoryNameText = 'Agorà'
+  if (categoryNameText === 'Economia') categoryName = 'Economy'
+  if (categoryNameText === 'Intervista') categoryName = 'Interview'
+  if (categoryNameText === 'Letteratura') categoryName = 'Literature'
+  const category = slugify(categoryName)
   const img = e['itunes:image'].__attr.href
   const image = ['interview', 'tour'].includes(category)
     ? img
     : `/img/cover/${category}.png`
-  const duration = e['itunes:duration']
-  const enclosure = e.enclosure.__attr
   
   // Participants
   const [, participantsString] =
@@ -82,7 +85,7 @@ const parseEpisode = e => {
     block,
     category,
     categoryName,
-    categoryNameAccent,
+    categoryNameText,
     number,
     title,
     titlePlain,
