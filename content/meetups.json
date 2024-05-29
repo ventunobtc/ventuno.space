@@ -8,7 +8,7 @@
     "state": [ 
       "Lombardia" 
     ],
-    "city": "",
+    "city": "Milano",
     "longitude": 9.1903474,
     "latitude": 45.46679408,
     "twitter_username": null,
@@ -23,24 +23,9 @@
     "state": [ 
       "Lombardia" 
     ],
-    "city": "",
+    "city": "Monza",
     "longitude": 9.2759,
     "latitude": 45.5834,
-    "twitter_username": null,
-    "website": null
-  },
-  {
-    "name": "Satoshi Spritz Varese",
-    "url": "https://t.me/SatoshiSpritzVarese",
-    "top": null,
-    "left": null,
-    "country": "IT",
-    "state": [ 
-      "Lombardia" 
-    ],
-    "city": "",
-    "longitude": 8.82286834,
-    "latitude": 45.817016770,
     "twitter_username": null,
     "website": null
   },
@@ -53,7 +38,7 @@
     "state": [ 
       "Lombardia" 
     ],
-    "city": "",
+    "city": "Bergamo",
     "longitude": 9.66842453,
     "latitude": 45.69441368,
     "twitter_username": null,
@@ -68,7 +53,7 @@
     "state": [ 
       "Lombardia" 
     ],
-    "city": "",
+    "city": "Brescia",
     "longitude": 10.21910323,
     "latitude": 45.53993052,
     "twitter_username": null,
@@ -83,7 +68,7 @@
     "state": [ 
       "Lombardia" 
     ],
-    "city": "",
+    "city": "Mantova",
     "longitude": 10.79277363,
     "latitude": 45.15726772,
     "twitter_username": null,
@@ -91,16 +76,46 @@
   },
   {
     "name": "Satoshi Spritz Crema",
-    "url": "https://t.me/SatoshiSpritzCrema",
+    "url": "https://t.me/SatoshiSpritzLodi",
     "top": null,
     "left": null,
     "country": "IT",
     "state": [ 
       "Lombardia" 
     ],
-    "city": "",
+    "city": "Crema",
     "longitude": 9.6817600,
     "latitude": 45.3626400,
+    "twitter_username": null,
+    "website": null
+  },
+  {
+    "name": "Satoshi Spritz Lodi",
+    "url": "https://t.me/SatoshiSpritzLodi",
+    "top": null,
+    "left": null,
+    "country": "IT",
+    "state": [ 
+      "Lombardia" 
+    ],
+    "city": "Lodi",
+    "longitude": 9.50085,
+    "latitude": 45.30989,
+    "twitter_username": null,
+    "website": null
+  },
+  {
+    "name": "Satoshi Spritz Como",
+    "url": "https://t.me/SatoshiSpritzComo",
+    "top": null,
+    "left": null,
+    "country": "IT",
+    "state": [ 
+      "Lombardia" 
+    ],
+    "city": "Como",
+    "longitude": 9.08065,
+    "latitude": 45.80079,
     "twitter_username": null,
     "website": null
   },
@@ -134,6 +149,21 @@
     "city": "Cuneo",
     "longitude": 7.542671,
     "latitude": 44.384477,
+    "twitter_username": null,
+    "website": null
+  },
+  {
+    "name": "Satoshi Spritz Bardonecchia",
+    "url": "https://t.me/SatoshiSpritzBardonecchia",
+    "top": null,
+    "left": null,
+    "country": "IT",
+    "state": [ 
+      "Piemonte" 
+    ],
+    "city": "Bardonecchia",
+    "longitude": 6.69888,
+    "latitude": 45.07462,
     "twitter_username": null,
     "website": null
   },
@@ -285,21 +315,6 @@
 
 
   {
-    "name": "Satoshi Spritz Bologna",
-    "url": "https://t.me/SatoshiSpritzBologna",
-    "top": null,
-    "left": null,
-    "country": "IT",
-    "state": [ 
-      "Emilia-Romagna" 
-    ],
-    "city": "Bologna",
-    "longitude": 11.3417208,
-    "latitude": 44.4943668,
-    "twitter_username": null,
-    "website": null
-  },
-  {
     "name": "Satoshi Spritz Ferrara",
     "url": "https://t.me/SatoshiSpritzFerrara",
     "top": null,
@@ -374,6 +389,37 @@
     "twitter_username": null,
     "website": null
   },
+  {
+    "name": "Satoshi Spritz Vignola",
+    "url": "https://t.me/SatoshiSpritzVignola",
+    "top": null,
+    "left": null,
+    "country": "IT",
+    "state": [ 
+      "Emilia-Romagna" 
+    ],
+    "city": "Vignola",
+    "longitude": 11.0058,
+    "latitude": 44.48758,
+    "twitter_username": null,
+    "website": null
+  },
+  {
+    "name": "Satoshi Spritz Reggio Emilia",
+    "url": "https://t.me/SatoshiSpritzReggioEmilia",
+    "top": null,
+    "left": null,
+    "country": "IT",
+    "state": [ 
+      "Emilia-Romagna" 
+    ],
+    "city": "Reggio Emilia",
+    "longitude": 10.63125,
+    "latitude": 44.69825,
+    "twitter_username": null,
+    "website": null
+  },
+
 
 
 
@@ -504,21 +550,6 @@
     "twitter_username": null,
     "website": null
   },
-  {
-    "name": "Satoshi Spritz Arezzo",
-    "url": "https://t.me/SatoshiSpritzArezzo",
-    "top": null,
-    "left": null,
-    "country": "IT",
-    "state": [ 
-      "Toscana" 
-    ],
-    "city": "Arezzo",
-    "longitude": 11.8806800,
-    "latitude": 43.4627600,
-    "twitter_username": null,
-    "website": null
-  },
 
 
 
@@ -537,7 +568,21 @@
     "twitter_username": null,
     "website": null
   },
-
+  {
+    "name": "Satoshi Spritz Nuori",
+    "url": "https://t.me/SatoshiSpritzNuoro",
+    "top": null,
+    "left": null,
+    "country": "IT",
+    "state": [ 
+      "Sardegna" 
+    ],
+    "city": "Nuoro",
+    "longitude": 9.31394,
+    "latitude": 40.31949,
+    "twitter_username": null,
+    "website": null
+  },
 
 
   {
@@ -573,6 +618,22 @@
     "twitter_username": null,
     "website": null
   },
+  {
+    "name": "Satoshi Spritz Cles",
+    "url": "https://t.me/SatoshiSpritzCles",
+    "top": null,
+    "left": null,
+    "country": "IT",
+    "state": [ 
+      "Trentino-Alto Adige" 
+    ],
+    "city": "Cles",
+    "longitude": 11.03276,
+    "latitude": 46.36294,
+    "twitter_username": null,
+    "website": null
+  },
+
 
 
 
@@ -621,7 +682,7 @@
     "state": [ 
       "Liguria" 
     ],
-    "city": "",
+    "city": "Savona",
     "longitude": 8.4645,
     "latitude": 44.2975603,
     "twitter_username": null,
